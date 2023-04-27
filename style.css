@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black !important; 
+    color: #E9F8F9;
+
+}
+
+
+#navbar-logo{
+    position: relative;
+    font-size: 5em;
+    font-weight: 800;
+    color: #E9F8F9;
+    transition: all 1s ease-in-out;
+}
+
+
+#navbar-logo:hover{
+    font-size: 5em;
+    font-weight: 800;
+    background-image: url('/assets/mask-image.gif');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 3rem;
+    font-weight: 200;
+}
+
+
+/* hero section */
+.main-container{
+    padding-top: 11em;
+}
+
+.hello-text{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.deuce-text{
+    font-size: 8rem;
+    font-weight: 800;
+    background-image: url('/assets/black-and-white-leaves.gif');
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.iam-text{
+    color: #1E1E1E;
+    font-size:106px;
+    font-weight: 700;
+}
+
+.first-section{
+    line-height:1;
+}
+
+
+/* typing effect css */
+
+  .typing-effect p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+    color: #E9F8F9;
+  }
+  .typing-effect p span.typed-text {
+    font-weight: normal;
+    color:#537FE7 ;
+  }
+  .typing-effect p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .typing-effect p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+
+
+
+
+
+/*typing effect css */
