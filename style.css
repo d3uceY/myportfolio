@@ -74,6 +74,11 @@ body{
 .first-section{
     line-height:1;
 }
+.hero-writeup{
+  max-width: 500px;
+  color: white;
+  line-height: 2;
+}
 
 
 /* typing effect css */
@@ -108,9 +113,119 @@ body{
     100%  { background-color: #ccc; }
   }
 
-
-
-
-
-
 /*typing effect css */
+
+
+/*about me section css */
+
+.profile-section{
+  margin-top: 15rem;
+}
+
+.profile-section div{
+  margin-top: 4rem;
+}
+
+.about-me-writeup span{
+  color: #537FE7;
+  font-style: italic;
+}
+
+.about-me-writeup{
+  max-width: 600px;
+  line-height: 2;
+}
+
+ul{
+  list-style: none;
+  font-size: 16px;
+  line-height: 2;
+}
+
+li img{
+  width: 20px;
+  height: 20px;
+}
+
+.list-icons{
+  margin-right:10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.list-icons:hover{
+  margin-right: 40px;
+  height:25px;
+  width:25px;
+}
+
+.listed-items{
+  max-width: 500px;
+}
+/* sub-header-containers */
+
+
+.sub-header-containers{
+  position: relative;
+}
+
+.sub-header-containers lord-icon{
+  position: absolute;
+  bottom:1px ;
+  left:10px;
+}
+
+
+.picture-of-me{
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+}
+
+/* sub-header-containers */
+
+
+/* picture hover animation */
+
+.picture-of-me:hover{
+  animation: myAnim 2s ease-in-out 0s  normal none;
+  
+}
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+/* picture hover animation */
+
+/* about me section css */
+
+/* project container css */
+.project-container{
+  margin-top: 15rem;
+}
+
+/* project container css */
