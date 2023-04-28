@@ -11,7 +11,7 @@
   <body>
     <!-- navigation section -->
     <header>
-      <nav class="navbar navbar-expand-lg container fixed-top">
+      <nav class="navbar navbar-expand-lg container fixed-top" id="NavBar">
           <div class="container-fluid">
             <a class="navbar-brand" id="navbar-logo" href="#"> d<span class="euce" style="color: transparent;">Euc3 </span></a>   
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,18 +58,18 @@
         <!-- second section -->
         <div class="profile-section"> 
           <div class="d-flex sub-header-containers">
-            <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>    About Me</h2>
+            <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>About Me</h2>
             <lord-icon
                src="https://cdn.lordicon.com/tyounuzx.json"
                trigger="loop"
-               colors="primary:#ffffff,secondary:#ffffff"
+               colors="primary:#ffffff,secondary:#16a9c7"
                style="width:60px;height:60px;">
             </lord-icon>
           </div>
          
-          <div class="d-lg-flex   justify-content-between">
+          <div class="d-lg-flex justify-content-between">
             <div class="write-ups text-xm-center">
-              <p class="about-me-writeup text-white">Hi, my name is Onyekwelu <span>"deuce"</span> Jesse and i enjoy creating thhings on the internet. 
+              <p class="about-me-writeup text-white text-align-justify">Hi, my name is Onyekwelu <span>"deuce"</span> Jesse and i enjoy creating thhings on the internet. 
                 i'm a 6'4 lightskin chad that has a uncanny resemblance to Drake. Yes, the picture you see there is actually me.
                 My interest in web development started when i was 3 years old. (i swear, i'm not lying. i have 20 years experience) PS. please hire me.
                  It turns out that's all it took to learn HTML and CSS!
@@ -78,17 +78,17 @@
                  a start-up and a student-led design studio</P>
 
                  <p class="text-white about-me-writeup">Here are some technologies that i've been working with:</p>
-                 <div class="listed-items d-flex text-white justify-content-between">
-                  <ul>
-                    <li><img class="list-icons" src="/assets/javascript.svg">Javascript</li>
-                    <li><img class="list-icons" src="/assets/react.svg">ReactJs</li>
-                    <li><img class="list-icons" src="/assets/flutter.svg">Flutter</li>
+                 <div class="listed-items text-white container row">
+                  <ul class="col">
+                    <li class="technologies"><img class="list-icons" src="/assets/javascript.svg">Javascript</li>
+                    <li class="technologies"><img class="list-icons" src="/assets/react.svg">ReactJs</li>
+                    <li class="technologies"><img class="list-icons" src="/assets/flutter.svg">Flutter</li>
                    </ul>
   
-                   <ul>
-                    <li><img class="list-icons" src="/assets/python.svg">Python</li>
-                    <li><img class="list-icons" src="/assets/tailwind-css.svg">Tailwind</li>
-                    <li><img class="list-icons" src="/assets/bootstrap.svg">Bootstrap</li>
+                   <ul class="col">
+                    <li class="technologies"><img class="list-icons" src="/assets/python.svg">Python</li>
+                    <li class="technologies"><img class="list-icons" src="/assets/tailwind-css.svg">Tailwind</li>
+                    <li class="technologies"><img class="list-icons" src="/assets/bootstrap.svg">Bootstrap</li>
                    </ul>
                  </div>
                  
@@ -107,12 +107,13 @@
       <div class="project-container ">
           <div>
             <div class="d-flex sub-header-containers container">
-              <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>    My Works</h2>
+              <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>My Works</h2>
               <lord-icon
-              src="https://cdn.lordicon.com/oswatybr.json"
+              src="https://cdn.lordicon.com/kqxqomzp.json"
               trigger="loop"
-              colors="primary:#30c9e8,secondary:#ffffff"
-              style="width:60px;height:60px">
+              colors="primary:#16a9c7,secondary:#ffffff"
+              style="width:90px;height:60px">
+          </lord-icon>
               </lord-icon>
             </div>
           
@@ -132,12 +133,10 @@
                style="width:250px;height:250px">
               </lord-icon>
             </div> -->
-            <p class="text-white project-writeup">*SIKE* there is no fucking way i'm showing you my projects. You will steal it</p>
-            <h1 class="text-white display-1">Ole!</h1>
           </div>
 
           <div class="project-image-container">
-              <img class="project-imag img-fluid d-block mx-auto" src="/assets/project.gif" alt="">
+              <img class="project-image img-fluid d-block mx-auto" src="/assets/working.gif" alt="">
              
           </div>
          </div>
@@ -149,7 +148,7 @@
         <!-- contact section starts Here -->
         <div class="contact-container container">
           <div class="d-flex sub-header-containers">
-            <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>    Say Hello</h2>
+            <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>Say Hello</h2>
             <lord-icon
             src="https://cdn.lordicon.com/zpxybbhl.json"
             trigger="loop"
@@ -159,7 +158,7 @@
           </div>
 
           <div class="contact-container-content">
-            <p class="contact-form-header text-white">Contact Me Using Form Or Reach out Directly</p>
+            <h1 class="contact-form-header text-white">Contact Me Using Form Or Reach out Directly</h1>
             <div class="d-xl-flex justify-content-between">
               <!-- text boxes -->
               <form>
@@ -168,7 +167,7 @@
                   <input type="Email" placeholder="Email" class="col-lg mb-3" required>
                 </div>
                 <div class="row">
-                  <textarea placeholder="Send me a message" type="text" cols="50" rows="6" class="col mb-3"></textarea>
+                  <textarea placeholder="Send me a message" type="text" cols="50" rows="5" class="col mb-3"></textarea>
                   <button class="col-12 button">
                     <lord-icon 
                     class="send-icon"
