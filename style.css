@@ -59,7 +59,7 @@ body{
 /* hero section */
 .main-container{
     padding-top: 11em;
-    padding: 20xp;
+
 }
 
 .hello-text{
@@ -350,12 +350,38 @@ a{
 
 .send-icon{
   position: relative;
-  top: -5px;
+  top: -2px;
 }
+
+.fab{
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.fab:hover{
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+}
+
 
 /* contact container css */
 
 
+/* footer css */
+footer span{
+  color: grey;
+  font-size: 11px;
+}
+
+footer{
+  background-color: black;
+  margin: none;
+}
+
+
+/* footer css */
 
 /* 
 media query */
@@ -373,10 +399,17 @@ media query */
   }
 
   .contact-form-header{
-    font-size: 2rem;
+    font-size: 25px;
+    text-align: center;
     
   }
+  .contact-link-container a{
+    font-size: 1rem;
+  }
 
+  .button{
+    padding: none;
+  }
 }
 
 
