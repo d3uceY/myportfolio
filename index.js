@@ -1,3 +1,5 @@
+// typing effect
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -39,3 +41,61 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+// typing effect
+
+
+//easter egg
+const secretCode = 'dEuc3';
+const secretCodeInput = document.querySelector('#secret-code-input');
+const submitButton = document.querySelector('#submit-button');
+
+submitButton.addEventListener('click', () => {
+  if (secretCodeInput.value === secretCode) {
+    alert('Wow, congratulatons. You have Redeemed your reward. Send Proof to Deuce');
+  }
+  else if (secretCodeInput.value === ''){
+    alert('do you think im a retard? type something, you ape')
+  }
+
+  else
+  alert('You got it wrong, Homie');
+
+});
+//easter egg
+
+
+
+
+//entrance animation
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting){
+          entry.target.classList.add('show')
+      } else 
+      entry.target.classList.remove('show')
+  })
+})
+
+
+
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+//entrance animation
+
+///loader
+var loader = document.getElementById('preloader');
+
+window.addEventListener('load', function(){
+  loader.style.display = 'none';
+})
+
+
+
+
+
+
+//loader
