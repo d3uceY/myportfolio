@@ -432,7 +432,12 @@ footer span{
   font-size: 11px;
 }
 
-footer{
+.footer-1{
+  background-color: black;
+  padding: 20px;
+}
+
+.footer-2{
   background-color: black;
   margin: none;
   height: 50px;
@@ -441,6 +446,21 @@ footer{
   align-items: center;
 }
 
+footer lord-icon{
+  position: relative;
+  top: 6px;
+  left:-11px
+}
+
+#footer-links{
+  color: white;
+  font-size: 16px;
+}
+
+
+#footer-links:hover{
+  color: grey;
+}
 
 /* footer css */
 
