@@ -11,9 +11,6 @@
   z-index: 100;
  
 }
-
-
-
 /* loader */
 
 
@@ -329,7 +326,9 @@ textarea::placeholder{
 }
 
 .button{
-  padding: 20px;
+  outline: none;
+  border: none;
+  padding: 10px;
   font-size: 19px;
   font-weight: 500;
   display: flex;
@@ -387,6 +386,8 @@ a{
 }
 
 #submit-button{
+  outline: none;
+  border: none;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -523,7 +524,7 @@ media query */
   opacity: 0;
   transition: all 1s !important;
   filter: blur(5px);
-  transform: translatex(-100%);
+  transform: translatex(-10%);
 }
 
 

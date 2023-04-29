@@ -3,7 +3,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["A Frontend Developer", "Gamer", "inside your mom lmao", "sorry"];
+const textArray = ["A Frontend Developer", "Gamer", "Jesse", "Deuce"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
@@ -74,8 +74,9 @@ const observer = new IntersectionObserver((entries) => {
       console.log(entry);
       if (entry.isIntersecting){
           entry.target.classList.add('show')
-      } else 
-      entry.target.classList.remove('show')
+      } 
+      // else 
+      // entry.target.classList.remove('show')
   })
 })
 
