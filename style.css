@@ -524,7 +524,7 @@ media query */
   opacity: 0;
   transition: all 1s !important;
   filter: blur(5px);
-  transform: translatex(-10%);
+  transform: translatey(20%);
 }
 
 
