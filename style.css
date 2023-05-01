@@ -458,6 +458,20 @@ a{
   border-radius: 100%;
 }
 
+
+.fa-solid{
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.fa-solid:hover{
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+}
+
+
 .secret-code-input-container{
   max-width: 320px;
   margin-top: 4rem;
