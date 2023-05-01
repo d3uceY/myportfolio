@@ -59,6 +59,12 @@ h2{
     color: transparent;
 }
 
+.nav-link lord-icon{
+  position: relative;
+  top: 6px;
+  left: -2px;
+}
+
 
 
 .navbar-nav .nav-item:not(:last-child) {
