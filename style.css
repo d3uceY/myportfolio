@@ -143,7 +143,7 @@ h2{
   }
   .typing-effect p span.typed-text {
     font-weight: normal;
-    color:#537FE7 ;
+    color:#16a9c7 ;
   }
   .typing-effect p span.cursor {
     display: inline-block;
@@ -178,7 +178,7 @@ h2{
 }
 
 .about-me-writeup span{
-  color: #537FE7;
+  color: #16a9c7;
   font-style: italic;
 }
 
