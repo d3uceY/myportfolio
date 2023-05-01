@@ -35,6 +35,13 @@ a{
 
 h2{
   font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 20px !important;
+}
+
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .navbar{
@@ -92,7 +99,7 @@ h2{
 
 .hello-text{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: 300;
     font-family: 'IBM Plex Mono', sans-serif;
 }
@@ -127,7 +134,7 @@ h2{
 /* typing effect css */
 
   .typing-effect p {
-    font-size: 3rem;
+    font-size: 25px;
     padding: 0.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -288,6 +295,10 @@ li img{
 	-webkit-animation: shadow-pop-tr 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	animation: shadow-pop-tr 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
   transition: all 1s ease-in-out;
+}
+
+.works-icon{
+  left: 23px !important;
 }
 
 /* sub-header-containers */
@@ -561,7 +572,7 @@ footer lord-icon{
 media query */
 @media screen and (max-width: 786px) {
   .typing-effect p{
-    font-size: 1.5rem ;
+    font-size: 15px ;
   }
 
   .deuce-text{
