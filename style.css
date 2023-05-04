@@ -882,7 +882,7 @@ media query */
   opacity: 0;
   transition: all 1s !important;
   filter: blur(5px);
-  transform: translatey(20%);
+  transform: translatey(40%);
 }
 
 
