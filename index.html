@@ -68,7 +68,7 @@
     <div class="container main-container">
 
       <!-- about section -->
-      <div id="about-container" class="about-container  container">
+      <div class="about-container  container">
         <!-- first section -->
         <div class="first-section">
           <p class="hello-text">Hello!</p>
@@ -80,9 +80,9 @@
              With a passion for solving complex problems and a commitment to staying up-to-date with the latest technologies, I leverage my expertise to deliver high-quality software solutions</p>
         </div>
         <!-- second section -->
-        <div class="profile-section"> 
+        <div class="profile-section" id="about-container"> 
           <div class="d-flex sub-header-containers">
-            <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>About Me</h2>
+            <h2 class="text-white"><span>. <span class="invisible">///////</span></span>About Me</h2>
             <lord-icon
                src="https://cdn.lordicon.com/tyounuzx.json"
                trigger="loop"
@@ -129,7 +129,7 @@
       <div id="projects" class="project-container ">
           <div>
             <div class="d-flex sub-header-containers container">
-              <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>My Works</h2>
+              <h2 class="text-white"><span>. <span class="invisible">///////</span></span>My Works</h2>
               <lord-icon
               class="works-icon"
               src="https://cdn.lordicon.com/kqxqomzp.json"
@@ -140,28 +140,29 @@
               </lord-icon>
             </div>
           
-         <div class="project justify-content-between container">
-          <!-- <div>
-            <div class="d-flex">
-              <lord-icon
-               src="https://cdn.lordicon.com/sbiheqdr.json"
-               trigger="hover"
-               colors="primary:#ffffff,secondary:#ffffff"
-               style="width:250px;height:250px">
-              </lord-icon>
-              <lord-icon
-               src="https://cdn.lordicon.com/raayvuis.json"
-               trigger="hover"
-               colors="primary:#ffffff,secondary:#ffffff"
-               style="width:250px;height:250px">
-              </lord-icon>
-            </div> -->
-          </div>
+         <div class="project container ">
+              <div class="projects row justify-content-center">
+                <a href="https://lifevillehospital.vercel.app/" class="col-lg-6">  <div class="project-block">
+                  <img src="/assets/lifeville.png" class="project-image" alt="">
+                 
+                 </div></a>
+                 
 
-          <div class="project-image-container">
-              <img class="project-image xs-img-fluid d-block mx-auto " src="/assets/working.gif" alt="">
-             
-          </div>
+                 <a href="" class="col-lg-6">  <div class="project-block-2 ">
+                  <img src="/assets/incomplete.webp" class="project-image" alt="">
+                 
+                 </div></a>
+
+                 <a href="" class="col-lg-6">  <div class="project-block-3 ">
+                  <img src="/assets/incomplete.webp" class="project-image" alt="">
+                 
+                 </div></a>
+
+                 <a href="" class="col-lg-6">  <div class="project-block-4 ">
+                  <img src="/assets/incomplete.webp" class="project-image" alt="">
+                 
+                 </div></a>
+              </div>
          </div>
 
       </div>
@@ -171,7 +172,7 @@
         <!-- contact section starts Here -->
         <div id="contacts" class="contact-container container">
           <div class="d-flex sub-header-containers">
-            <h2 class="text-white"><span>/ <span class="invisible">///////</span></span>Say Hello!</h2>
+            <h2 class="text-white"><span>. <span class="invisible">///////</span></span>Say Hello!</h2>
             <lord-icon
             src="https://cdn.lordicon.com/zpxybbhl.json"
             trigger="loop"
@@ -241,41 +242,42 @@
         </div>
         <!-- contact section ends here -->
       </div>
-      <footer class="container footer-1">
-        <ul class="row">
-          <li class="hidden col-sm-12 col-lg-3 text-white">
-            <lord-icon
-            src="https://cdn.lordicon.com/gmzxduhd.json"
-            trigger="loop"
-            colors="primary:#ffffff,secondary:#ffffff"
-            style="width:25px;height:25px">
-        </lord-icon><a id="footer-links" href="#">Home</a></li>
-          <li class="hidden col-sm-12 col-lg-3 text-white"> 
-           <lord-icon
-            src="https://cdn.lordicon.com/tyounuzx.json"
-            trigger="loop"
-            colors="primary:#ffffff,secondary:#ffffff"
-            style="width:25px;height:25px;">
-         </lord-icon><a id="footer-links" href="#about-container">About</a></li>
-          <li class="hidden col-sm-12 col-lg-3 text-white">
-            <lord-icon
-            src="https://cdn.lordicon.com/kqxqomzp.json"
-            trigger="loop"
-            colors="primary:#ffffff,secondary:#ffffff"
-            style="width:25px;height:25px">
-        </lord-icon><a id="footer-links" href="#projects"> Projects</a></li>
-          <li class="hidden col-sm-12 col-lg-3 text-white"> 
-             <lord-icon
-            src="https://cdn.lordicon.com/zpxybbhl.json"
-            trigger="loop"
-            colors="primary:#ffffff,secondary:#ffffff"
-            style="width:25px;height:25px">
-            </lord-icon>  <a id="footer-links" href="#contacts">Contact Me</a></li>
-
-        </ul>
-      </footer>
-      <footer class="container hidden footer-2"> <span>Designed & Built By dEuc3</span> </footer>
+      
         <!-- main container ends here -->
+        <footer class="container footer-1">
+          <ul class="row">
+            <li class="hidden col-sm-12 col-lg-3 text-white">
+              <lord-icon
+              src="https://cdn.lordicon.com/gmzxduhd.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff"
+              style="width:25px;height:25px">
+          </lord-icon><a id="footer-links" href="#">Home</a></li>
+            <li class="hidden col-sm-12 col-lg-3 text-white"> 
+             <lord-icon
+              src="https://cdn.lordicon.com/tyounuzx.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff"
+              style="width:25px;height:25px;">
+           </lord-icon><a id="footer-links" href="#about-container">About</a></li>
+            <li class="hidden col-sm-12 col-lg-3 text-white">
+              <lord-icon
+              src="https://cdn.lordicon.com/kqxqomzp.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff"
+              style="width:25px;height:25px">
+          </lord-icon><a id="footer-links" href="#projects"> Projects</a></li>
+            <li class="hidden col-sm-12 col-lg-3 text-white"> 
+               <lord-icon
+              src="https://cdn.lordicon.com/zpxybbhl.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff"
+              style="width:25px;height:25px">
+              </lord-icon>  <a id="footer-links" href="#contacts">Contact Me</a></li>
+  
+          </ul>
+        </footer>
+        <footer class="container hidden footer-2"> <span>Designed & Built By dEuc3</span> </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="/index.js"></script>

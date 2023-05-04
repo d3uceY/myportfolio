@@ -107,7 +107,7 @@ h2{
 .deuce-text{
     font-size: 8rem;
     font-weight: 800;
-    background-image: url('/assets/black-and-white-leaves.gif');
+    background-image: url('/assets/birds.gif');
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
@@ -127,7 +127,6 @@ h2{
   max-width: 500px;
   color: white;
   line-height: 2;
-  
 }
 
 
@@ -185,7 +184,8 @@ h2{
 .about-me-writeup{
   max-width: 600px;
   line-height: 2;
- 
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 ul{
@@ -341,31 +341,267 @@ li img{
 
 /* about me section css */
 
-/* project container css */
-.project-container div div{
-  margin-bottom: 8rem
-}
 
+
+
+
+
+
+/* project container css */
 .project-container{
   margin-top: 15rem;
 }
 
+/* project-block  */
+
+.project-block{
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+}
+
+
+/* lifeville css */
+.project-block{
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+}
+
+.project-block:after{
+    content: 'Lifeville';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 400;
+    font-size: 200%;
+    transition: all 0.25s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-block:hover::After{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.project-block:before{
+  content: '';
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+
+.project-block:hover::before{
+  opacity: 1;
+}
+
+/* lifeville css */
+
+
+
+
+/* second block css */
+.project-block-2{
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+  overflow: hidden;
+}
+
+.project-block-2:after{
+  content: 'Not Ready!';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 400;
+  font-size: 200%;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-block-2:hover::After{
+opacity: 1;
+transform: translateY(0px);
+}
+
+
+.project-block-2:before{
+content: '';
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transition: 0.5s all;
+}
+
+
+.project-block-2:hover::before{
+opacity: 1;
+}
+
+
+.project-block-2:hover{
+  filter: grayscale(0);
+}
+/* second block css */
+
+
+/* third block css */
+.project-block-3{
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+}
+
+.project-block-3:after{
+  content: 'Not Ready!';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 400;
+  font-size: 200%;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-block-3:hover::After{
+opacity: 1;
+transform: translateY(0px);
+}
+
+
+.project-block-3:before{
+content: '';
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transition: 0.5s all;
+}
+
+
+.project-block-3:hover::before{
+opacity: 1;
+}
+
+
+.project-block-3:hover{
+  filter: grayscale(0);
+}
+/* third block css */
+
+/* fourth block css */
+.project-block-4{
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+}
+
+.project-block-4:after{
+  content: 'Not Ready!';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 400;
+  font-size: 200%;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-block-4:hover::After{
+opacity: 1;
+transform: translateY(0px);
+}
+
+
+.project-block-4:before{
+content: '';
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transition: 0.5s all;
+}
+
+
+.project-block-4:hover::before{
+opacity: 1;
+}
+
+
+.project-block-4:hover{
+  filter: grayscale(0);
+}
+/* fourth block css */
+
+
+
+
+
+
+
+.project-block:hover{
+  filter: grayscale(0);
+}
+/* project-block  */
+
+
 .project-image{
   width: 100%;
 }
-
-
-.project-writeup{
-  font-size: 2rem;
-}
-
-.project .d-flex{
-  margin-top: 8.5rem; 
-}
-
-
-
 /* project container css */
+
+
+
+
+
+
+
 
 
 
@@ -385,6 +621,7 @@ li img{
 }
 
 textarea{
+  
   padding: 20px;
   background-color: rgb(26, 26, 26);
   color: white;
@@ -607,8 +844,13 @@ textarea::placeholder{
   font-weight: 400;
   font-size: 16px;
 }
+
+
+h2{
+  font-size: 1.5rem !important;
 }
 
+}
 
 
 @media screen and (max-width: 992px) {
