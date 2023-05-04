@@ -352,6 +352,19 @@ li img{
   margin-top: 15rem;
 }
 
+.project-header{
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.project-featured{
+  color: #16a9c7;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 9rem;
+}
+
 /* project-block  */
 
 .project-block{
