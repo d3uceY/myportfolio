@@ -2,6 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 
+:root{
+  --blue: #16a9c7;
+    --grey: #1A1A1A;
+    --black: #111111;
+    --paragraph-size: 26px;
+    --paragraph-size-small-screen: 20px;
+    --heading-size: 4rem;
+    --poppings: 'Poppings',sans-serif;
+    --mono:'IBM Plex Mono',sans-serif;
+    --margin-bottom-header: 6rem;
+    --margin-bottom-header-small-screen: 3.5rem;
+    --lineheight: 1.4;  
+    --margin-bottom-nav: 15rem;
+    --margin-bottom-nav-small-screen: 5rem;
+    --navbar-font-size-small-screen:29px;
+    --image-margin-top: 6rem;
+    --image-margin-bottom: 3rem;
+}
+
 /* loader */
 #preloader{
   background: #000 url(/assets/pacman.svg) no-repeat center;
@@ -25,7 +44,7 @@
 }
 
 body{
-    background-color: #111111 !important; 
+    background-color: var(--black) !important; 
 }
 
 a{
@@ -45,7 +64,7 @@ h2{
 }
 
 .navbar{
-  background-color: #111111;
+  background-color: var(--black);
 }
 
 #navbar-logo{
@@ -142,7 +161,7 @@ h2{
   }
   .typing-effect p span.typed-text {
     font-weight: normal;
-    color:#16a9c7 ;
+    color: var(--blue) ;
   }
   .typing-effect p span.cursor {
     display: inline-block;
@@ -184,8 +203,6 @@ h2{
 .about-me-writeup{
   max-width: 600px;
   line-height: 2;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 ul{
@@ -636,7 +653,7 @@ opacity: 1;
 textarea{
   
   padding: 20px;
-  background-color: rgb(26, 26, 26);
+  background-color: var(--grey);
   color: white;
   border: none;
   outline: none;
@@ -645,7 +662,7 @@ textarea{
 
 input{
   padding: 20px;
-  background-color: rgb(26, 26, 26);
+  background-color:var(--grey);
   color: white;
   border: none;
   outline: none;
@@ -821,6 +838,19 @@ footer lord-icon{
 /* 
 media query */
 @media screen and (max-width: 786px) {
+  #navbar-logo{
+    font-size: var(--navbar-font-size-small-screen);
+    position: relative;
+    font-weight: 800;
+    color: #E9F8F9;
+    transition: all 1s ease-in-out;
+    font-family: var(--mono)
+}
+
+.navbar{
+    margin-bottom: var(--margin-bottom-nav-small-screen);
+  }
+
   .typing-effect p{
     font-size: 15px ;
   }
