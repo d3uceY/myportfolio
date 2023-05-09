@@ -11,7 +11,7 @@
     --grey: #1A1A1A;
     --black: #111111;
     --paragraph-size: 26px;
-    --paragraph-size-small-screen: 20px;
+    --paragraph-size-small-screen: 16px;
     --heading-size: 4rem;
     --poppings: 'Poppings',sans-serif;
     --mono:'IBM Plex Mono',sans-serif;
@@ -125,12 +125,12 @@ a{
   }
   
   #navbar-logo{
-      font-size: 40px;
-      position: relative;
-      font-weight: 800;
-      color: #E9F8F9;
-      transition: all 1s ease-in-out;
-      font-family: var(--mono)
+    font-size: 40px;
+    position: relative;
+    font-weight: 300 !important;
+    color: white;
+    transition: all 1s ease-in-out;
+    font-style: var(--mono);
   }
   
   

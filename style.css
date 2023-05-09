@@ -68,10 +68,10 @@ h2{
 }
 
 #navbar-logo{
-  font-size: 40px;
+    font-size: 40px;
     position: relative;
-    font-weight: 800;
-    color: #E9F8F9;
+    font-weight: 300 !important;
+    color: white;
     transition: all 1s ease-in-out;
 }
 
@@ -146,6 +146,8 @@ h2{
   max-width: 500px;
   color: white;
   line-height: 2;
+  font-weight: 100;
+  font-size: 20px;
 }
 
 
@@ -198,17 +200,24 @@ h2{
 .about-me-writeup span{
   color: #16a9c7;
   font-style: italic;
+  font-weight: 300;
 }
 
 .about-me-writeup{
   max-width: 600px;
   line-height: 2;
+  font-weight: 100;
+  font-size: 20px;
 }
 
 ul{
   list-style: none;
   font-size: 16px;
   line-height: 2;
+}
+
+.listed-items{
+  max-width: 700px !important
 }
 
 li img{
@@ -388,7 +397,7 @@ li img{
   margin-bottom: 20px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  filter: grayscale(100);
+ 
 }
 
 
@@ -397,7 +406,7 @@ li img{
   margin-bottom: 20px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  filter: grayscale(100);
+ 
 }
 
 .project-block:after{
@@ -411,7 +420,7 @@ li img{
     display: grid;
     place-items: center;
     font-weight: 400;
-    font-size: 200%;
+    font-size: 5rem;
     transition: all 0.25s ease-in-out;
     opacity: 0;
     transform: translateY(20px);
@@ -447,15 +456,15 @@ li img{
 
 /* second block css */
 .project-block-2{
+  aspect-ratio: 1 / 1;
   margin-bottom: 20px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  filter: grayscale(100);
   overflow: hidden;
 }
 
 .project-block-2:after{
-  content: 'Not Ready!';
+  content: 'Lalasia';
   height: 100%;
   width: 100%;
   top: 0;
@@ -465,7 +474,7 @@ li img{
   display: grid;
   place-items: center;
   font-weight: 400;
-  font-size: 200%;
+  font-size: 5rem;
   transition: all 0.25s ease-in-out;
   opacity: 0;
   transform: translateY(20px);
@@ -496,7 +505,7 @@ opacity: 1;
 
 
 .project-block-2:hover{
-  filter: grayscale(0);
+  
 }
 /* second block css */
 
@@ -506,11 +515,11 @@ opacity: 1;
   margin-bottom: 20px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  filter: grayscale(100);
+  
 }
 
 .project-block-3:after{
-  content: 'Not Ready!';
+  content: 'Citrone';
   height: 100%;
   width: 100%;
   top: 0;
@@ -520,7 +529,7 @@ opacity: 1;
   display: grid;
   place-items: center;
   font-weight: 400;
-  font-size: 200%;
+  font-size: 5rem;
   transition: all 0.25s ease-in-out;
   opacity: 0;
   transform: translateY(20px);
@@ -551,7 +560,7 @@ opacity: 1;
 
 
 .project-block-3:hover{
-  filter: grayscale(0);
+  
 }
 /* third block css */
 
@@ -560,7 +569,6 @@ opacity: 1;
   margin-bottom: 20px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  filter: grayscale(100);
 }
 
 .project-block-4:after{
@@ -574,7 +582,7 @@ opacity: 1;
   display: grid;
   place-items: center;
   font-weight: 400;
-  font-size: 200%;
+  font-size: 5rem;
   transition: all 0.25s ease-in-out;
   opacity: 0;
   transform: translateY(20px);
@@ -605,7 +613,7 @@ opacity: 1;
 
 
 .project-block-4:hover{
-  filter: grayscale(0);
+  
 }
 /* fourth block css */
 
@@ -616,13 +624,15 @@ opacity: 1;
 
 
 .project-block:hover{
-  filter: grayscale(0);
+  
 }
 /* project-block  */
 
 
 .project-image{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* project container css */
 
@@ -838,6 +848,16 @@ footer lord-icon{
 /* 
 media query */
 @media screen and (max-width: 786px) {
+
+  .main-container{
+    padding-top: 5em;
+}
+
+  .about-me-writeup,
+  .hero-writeup{
+    font-size: 16px;
+  }
+
   #navbar-logo{
     font-size: var(--navbar-font-size-small-screen);
     position: relative;
