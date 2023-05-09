@@ -146,7 +146,7 @@ h2{
   max-width: 500px;
   color: white;
   line-height: 2;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 20px;
 }
 
@@ -206,8 +206,9 @@ h2{
 .about-me-writeup{
   max-width: 600px;
   line-height: 2;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 20px;
+  text-align: justify;
 }
 
 ul{
@@ -313,14 +314,10 @@ li img{
 
 
 .picture-of-me{
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 600px !important;
+  filter: grayscale(100);
   transition: all 1s ease-in-out;
-}
-.shadow-pop-tr:hover {
-	-webkit-animation: shadow-pop-tr 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: shadow-pop-tr 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-  transition: all 1s ease-in-out;
+  border-radius: 10%;
 }
 
 .works-icon{
@@ -330,40 +327,7 @@ li img{
 /* sub-header-containers */
 
 
-/* picture hover animation */
 
-@-webkit-keyframes shadow-pop-tr {
-  0% {
-    -webkit-box-shadow: 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff;
-            box-shadow: 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px -1px#ffff, 2px -2px#ffff, 3px -3px#ffff, 4px -4px#ffff, 5px -5px#ffff, 6px -6px#ffff, 7px -7px#ffff, 8px -8px#ffff;
-            box-shadow: 1px -1px#ffff, 2px -2px#ffff, 3px -3px#ffff, 4px -4px#ffff, 5px -5px#ffff, 6px -6px#ffff, 7px -7px#ffff, 8px -8px#ffff;
-    -webkit-transform: translateX(-8px) translateY(8px);
-            transform: translateX(-8px) translateY(8px);
-  }
-}
-@keyframes shadow-pop-tr {
-  0% {
-    -webkit-box-shadow: 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff;
-            box-shadow: 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff, 0 0#ffff;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px -1px#ffff, 2px -2px#ffff, 3px -3px#ffff, 4px -4px#ffff, 5px -5px#ffff, 6px -6px#ffff, 7px -7px#ffff, 8px -8px#ffff;
-            box-shadow: 1px -1px#ffff, 2px -2px#ffff, 3px -3px#ffff, 4px -4px#ffff, 5px -5px#ffff, 6px -6px#ffff, 7px -7px#ffff, 8px -8px#ffff;
-    -webkit-transform: translateX(-8px) translateY(8px);
-            transform: translateX(-8px) translateY(8px);
-  }
-}
-
-
-
-/* picture hover animation */
 
 /* about me section css */
 
