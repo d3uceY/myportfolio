@@ -172,22 +172,22 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: white;
   outline: none;
   border: none;
   font-family: var(--mono);
   font-weight: 400;
   margin-top: 3rem;
   transition: all 250ms ease-out;
-  font-size: 25px;
+  font-size: 20px;
+  border: 1px solid white;
 }
 
 .resume-button:hover,
 .resume-button:focus-visible{
-   background-color: transparent;
-   color: white;
-   border: 1px solid white;
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
 
 
