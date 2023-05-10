@@ -40,7 +40,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.2s ease-in-out;
 }
 
 body{
@@ -168,6 +167,29 @@ h2{
   font-size: 20px;
 }
 
+.resume-button{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+  font-family: var(--mono);
+  font-weight: 400;
+  margin-top: 3rem;
+  transition: all 250ms ease-out;
+  font-size: 25px;
+}
+
+.resume-button:hover,
+.resume-button:focus-visible{
+   background-color: transparent;
+   color: white;
+   border: 1px solid white;
+}
+
 
 /* typing effect css */
 
@@ -238,8 +260,9 @@ h2{
 }
 
 .about-me-writeup i{
-  text-decoration: underline var(--blue);
   font-style: normal;
+  color: var(--blue);
+  font-weight: 700;
 }
 
 .about-me-writeup span a{
@@ -864,6 +887,9 @@ footer lord-icon{
 /* 
 media query */
 @media screen and (max-width: 786px) {
+  .nav-link:hover::before{
+    width: 0%;
+  }
 
   .about-me-writeup span a{
     font-size: 16px;
@@ -939,6 +965,10 @@ h2{
 @media screen and (max-width: 992px) {
   #NavBar{
     border-bottom: 1px solid white;
+  }
+
+  .nav-link:hover::before{
+    width: 0%;
   }
 }
 
