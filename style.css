@@ -57,6 +57,7 @@ h2{
   font-weight: 700 !important;
 }
 
+/* .navbar */
 
 .navbar-toggler:focus {
   outline: none !important;
@@ -95,19 +96,36 @@ h2{
 
 .navbar-nav .nav-item:not(:last-child) {
     margin-right: 3rem;
-    font-weight: 500;
-    box-shadow: inset 0 0 0 0 white;
 }
 
 .nav-item .nav-link{
   color: white;
 }
 
-.navbar-nav .nav-item:hover{
-   box-shadow: inset 100px 0 0 0 white;
+.navbar-nav .nav-link:hover{
+  color: white;
 }
 
+.nav-link{
+  position: relative;
+}
 
+.nav-link:before{
+  content: '';
+  width: 0%;
+  background-color: var(--blue);
+  height: 3px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.nav-link:hover::before{
+  width: 100%;
+}
+
+/* .navbar */
 
 
 /* hero section */
@@ -201,6 +219,31 @@ h2{
   color: #16a9c7;
   font-style: italic;
   font-weight: 300;
+  position: relative;
+}
+
+.about-me-writeup span::before{
+  content: '';
+  width: 0%;
+  background-color: var(--blue);
+  height: 3px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.about-me-writeup span:hover::before{
+  width: 100%;
+}
+
+.about-me-writeup i{
+  text-decoration: underline var(--blue);
+  font-style: normal;
+}
+
+.about-me-writeup span a{
+  color: var(--blue);
 }
 
 .about-me-writeup{
@@ -663,11 +706,11 @@ textarea::placeholder{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease-in-out !important;    
+  transition: all 500ms ease-in-out;
 }
 
 .button:hover{
-  background: linear-gradient(90deg,#ffffff 0%, #717971 80%);
+  opacity: 0.6;
 }
 
 form{
@@ -701,12 +744,11 @@ a{
   color: white;
   font-size: 25px;
   padding: 10px;
+  transition: all 500ms ease-in-out;
 }
 
 .fab:hover{
-  color: black;
-  background-color: white;
-  border-radius: 100%;
+  color: var(--blue);
 }
 
 
@@ -714,12 +756,11 @@ a{
   color: white;
   font-size: 25px;
   padding: 10px;
+  transition: all 500ms ease-in-out;
 }
 
 .fa-solid:hover{
-  color: black;
-  background-color: white;
-  border-radius: 100%;
+  color: var(--blue);
 }
 
 
@@ -799,11 +840,23 @@ footer lord-icon{
 #footer-links{
   color: white;
   font-size: 16px;
+  position: relative;
 }
 
 
-#footer-links:hover{
-  color: grey;
+#footer-links::before{
+  content: '';
+  width: 0%;
+  background-color: var(--blue);
+  height: 3px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 250ms ease-in-out;
+}
+
+#footer-links:hover::before{
+  width: 100%;
 }
 
 /* footer css */
