@@ -865,8 +865,12 @@ footer lord-icon{
 media query */
 @media screen and (max-width: 786px) {
 
+  .about-me-writeup span a{
+    font-size: 16px;
+  }
+
   .main-container{
-    padding-top: 5em;
+    padding-top: 2rem;
 }
 
   .about-me-writeup,
