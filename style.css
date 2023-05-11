@@ -960,7 +960,7 @@ media query */
 /* hidden and show transitions */
 .hidden{
   opacity: 0;
-  transition: all 1s !important;
+  transition: all 1s ease-in-out !important;
   filter: blur(5px);
   transform: translatey(40%);
 }
