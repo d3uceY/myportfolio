@@ -143,9 +143,8 @@ h2{
 .deuce-text{
     font-size: 8rem;
     font-weight: 800;
-    background-image: url('/assets/birds.gif');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -381,7 +380,7 @@ li img{
 
 .picture-of-me{
   max-width: 300px !important;
-  border-radius: 10%;
+  border-radius: 4%;
   filter: grayscale(100);
 }
 
@@ -421,13 +420,6 @@ li img{
 }
 
 /* project-block  */
-
-.project-block{
-  margin-bottom: 20px;
-  position: relative;
-  transition: all 0.5s ease-in-out;
- 
-}
 
 
 /* lifeville css */
@@ -533,9 +525,6 @@ opacity: 1;
 }
 
 
-.project-block-2:hover{
-  
-}
 /* second block css */
 
 
@@ -587,10 +576,6 @@ transition: 0.5s all;
 opacity: 1;
 }
 
-
-.project-block-3:hover{
-  
-}
 /* third block css */
 
 /* fourth block css */
@@ -640,10 +625,6 @@ transition: 0.5s all;
 opacity: 1;
 }
 
-
-.project-block-4:hover{
-  
-}
 /* fourth block css */
 
 
@@ -661,7 +642,6 @@ opacity: 1;
 .project-image{
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 /* project container css */
 
