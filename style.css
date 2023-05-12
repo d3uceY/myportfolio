@@ -391,7 +391,7 @@ li img{
 .picture-of-me{
   max-height: 300px;
   max-height: 300px;
-  border-radius: 5px;
+  border-radius: 100%;
   filter: grayscale(90%);
 }
 .overlay-container{
@@ -403,6 +403,7 @@ li img{
   opacity: 0;
   background-color: var(--blue-transparent);
   transition: all 250ms ease-in-out;
+  border-radius: 100%;
 }
 
 .overlay-container >*{
