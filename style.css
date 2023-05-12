@@ -24,7 +24,7 @@
 
 /* loader */
 #preloader{
-  background: #000 url(/assets/pacman.svg) no-repeat center;
+  background: black url(/assets/pacman.svg) no-repeat center;
   background-size: 30%;
   height: 100vh;
   width: 100%;
