@@ -391,7 +391,8 @@ li img{
 .picture-of-me{
   max-height: 300px;
   max-height: 300px;
-  filter: grayscale(100);
+  border-radius: 5px;
+  filter: grayscale(90%);
 }
 .overlay-container{
   position: absolute;
@@ -407,6 +408,10 @@ li img{
 .overlay-container >*{
   transform: translateY(20px);
   transition: all 400ms ease-in-out;
+}
+
+.overlay-container:hover ~ .picture-of-me{
+  filter: grayscale(0);
 }
 
 .overlay-container:hover >*{
