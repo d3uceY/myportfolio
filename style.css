@@ -19,6 +19,7 @@
     --navbar-font-size-small-screen:29px;
     --image-margin-top: 6rem;
     --image-margin-bottom: 3rem;
+    --blue-transparent: #16a9c780;
 }
 
 /* loader */
@@ -399,7 +400,7 @@ li img{
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: var(--blue);
+  background-color: var(--blue-transparent);
   transition: all 250ms ease-in-out;
 }
 
