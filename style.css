@@ -378,18 +378,70 @@ li img{
 }
 
 
-.picture-of-me{
-  max-width: 300px !important;
-  border-radius: 4%;
-  filter: grayscale(100);
-}
-
-.works-icon{
-  left: 23px !important;
-}
-
 /* sub-header-containers */
 
+/* profile picture css */
+.image-container{
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.picture-of-me{
+  max-height: 300px;
+  max-height: 300px;
+  filter: grayscale(100);
+}
+.overlay-container{
+  position: absolute;
+  left: 0;
+  top: -64px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--blue);
+  transition: all 250ms ease-in-out;
+}
+
+.overlay-container >*{
+  transform: translateY(20px);
+  transition: all 400ms ease-in-out;
+}
+
+.overlay-container:hover >*{
+  transform: translateY(0px);
+}
+
+.overlay-container:hover{
+  opacity: 1;
+}
+
+.profile-name,
+.profile-description{
+  text-align: center;
+  font-family: var(--mono);
+}
+
+.profile-name{
+  font-size: 1.4rem;
+}
+
+.profile-description{
+  font-size: 0.8rem;
+}
+
+.profile-icon-container{
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.profile-icon{
+  position: absolute;
+}
+
+
+/* profile picture css */
 
 
 
@@ -402,6 +454,10 @@ li img{
 
 
 /* project container css */
+
+.works-icon{
+  left: 23px !important;
+}
 .project-container{
   margin-top: 15rem;
 }
