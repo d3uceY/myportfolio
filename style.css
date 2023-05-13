@@ -389,8 +389,8 @@ li img{
 }
 
 .picture-of-me{
-  max-height: 300px;
-  max-height: 300px;
+  max-width: 300px;
+  max-height: 250px;
   border-radius: 100%;
   filter: grayscale(90%);
 }
@@ -930,9 +930,7 @@ footer lord-icon{
 /* 
 media query */
 @media screen and (max-width: 786px) {
-  .nav-link:hover::before{
-    width: 0%;
-  }
+
 
   .about-me-writeup span a{
     font-size: 16px;
@@ -1005,13 +1003,30 @@ h2{
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #NavBar{
     border-bottom: 1px solid white;
+    
+  }
+  
+  .nav-item{
+    margin-right: 0px !important;
   }
 
   .nav-link:hover::before{
     width: 0%;
+  }
+
+  .nav-link{
+    margin-top: 40px;
+  }
+
+  .nav-link:hover{
+    opacity: 0.6;
+  }
+
+  #navbarNavDropdown{
+    text-align: center;
   }
 }
 
