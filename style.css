@@ -1020,7 +1020,7 @@ h2{
     display: flex !important;
     align-items: center;
     justify-content: center;
-    height: 100dvh;
+    height: 100vh;
   }
 
   .nav-link:hover{
