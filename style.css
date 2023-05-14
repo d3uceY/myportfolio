@@ -1006,7 +1006,6 @@ h2{
 @media screen and (max-width: 991px) {
   #NavBar{
     border-bottom: 1px solid white;
-    
   }
   
   .nav-item{
@@ -1017,8 +1016,11 @@ h2{
     width: 0%;
   }
 
-  .nav-link{
-    margin-top: 40px;
+  .navbar-nav{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
   }
 
   .nav-link:hover{
