@@ -113,9 +113,9 @@ a{
 
 /* image */
 
- /* navbar */
+ /* .navbar */
 
- .navbar-toggler:focus {
+.navbar-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
 }
@@ -282,11 +282,7 @@ li{
     .nav-link:hover::before{
       width: 0%;
     }
-  
-    .nav-link{
-      margin-top: 40px;
-    }
-  
+    
     .nav-link:hover{
       opacity: 0.6;
     }
