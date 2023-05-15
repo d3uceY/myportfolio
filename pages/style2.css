@@ -272,6 +272,8 @@ li{
   @media screen and (max-width: 992px) {
     #NavBar{
       border-bottom: 1px solid white;
+      border-image-source:radial-gradient(circle farthest-corner at center center, #FFFFFF 0%, #111111 100%);
+      border-image-slice: 1;
       
     }
     
