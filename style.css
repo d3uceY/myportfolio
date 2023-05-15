@@ -47,9 +47,6 @@ body{
     background-color: var(--black) !important; 
 }
 
-a{
-  font-family: 'IBM Plex Mono', sans-serif;
-}
 
 h2{
   font-family: 'IBM Plex Mono', sans-serif;
