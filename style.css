@@ -170,9 +170,6 @@ h2{
 
 .resume-button{
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
   color: white;
   outline: none;
@@ -190,7 +187,6 @@ h2{
     border: 1px solid var(--blue);
     color: var(--blue);
 }
-
 
 /* typing effect css */
 
