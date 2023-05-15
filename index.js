@@ -55,11 +55,11 @@ submitButton.addEventListener('click', () => {
     alert('Wow, congratulatons. You have Redeemed your reward. Send Proof to Deuce');
   }
   else if (secretCodeInput.value === ''){
-    alert('do you think im a retard? type something, you ape')
+    alert('type something inside, abeg')
   }
 
   else
-  alert('You got it wrong, Homie');
+  alert('Sorry. Try again. You got it wrong');
 
 });
 //easter egg
