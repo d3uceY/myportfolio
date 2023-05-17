@@ -394,16 +394,14 @@ li img{
 }
 
 .project-header{
-  margin-top: 8rem;
+  margin-top: 8rem !important;
   text-align: center;
-  font-size: 1.8rem;
 }
 .project-featured{
   color: #16a9c7;
-  font-size: 20px;
   text-align: center;
   line-height: 2;
-  margin-bottom: 9rem;
+  margin-bottom: 9rem !important;
 }
 
 /* project-block  */
@@ -856,12 +854,12 @@ media query */
 @media screen and (max-width: 786px) {
 
   .project-featured{
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
   }
 
   .project-header{
-    margin-top: 5rem;
-    font-size: 25px;
+    margin-top: 5rem !important;
+
   }
 
   .resume-button{
@@ -909,7 +907,6 @@ media query */
   }
 
   .contact-form-header{
-    font-size: 25px;
     text-align: center;
     
   }
