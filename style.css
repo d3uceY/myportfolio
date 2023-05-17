@@ -266,12 +266,16 @@ h2{
 
 ul{
   list-style: none;
-  font-size: 16px;
   line-height: 2;
 }
 
+.technologies{
+  font-weight: 200;
+}
+
 .listed-items{
-  max-width: 700px !important
+  max-width: 700px !important;
+  margin-top: 0px !important;
 }
 
 li img{
@@ -281,7 +285,6 @@ li img{
 
 .list-icons{
   margin-right:10px;
-  transition: all 0.4s ease-in-out;
 }
 
 
@@ -852,6 +855,19 @@ footer lord-icon{
 media query */
 @media screen and (max-width: 786px) {
 
+  .project-featured{
+    margin-bottom: 2rem;
+  }
+
+  .project-header{
+    margin-top: 5rem;
+    font-size: 25px;
+  }
+
+  .resume-button{
+    font-size: 13px;
+    margin-top: 1.2rem;
+  }
 
   .about-me-writeup span a{
     font-size: 16px;
@@ -862,8 +878,9 @@ media query */
 }
 
   .about-me-writeup,
-  .hero-writeup{
-    font-size: 16px;
+  .hero-writeup,
+  .technologies{
+    font-size: 13px;
   }
 
   #navbar-logo{
