@@ -110,7 +110,7 @@ h2{
   content: '';
   width: 0%;
   background-color: var(--blue);
-  height: 3px;
+  height: 1px;
   position:absolute;
   left: 0;
   bottom: 0;
@@ -132,7 +132,6 @@ h2{
 
 .hello-text{
     color: #ffffff;
-    font-size: 20px;
     font-weight: 300;
     font-family: 'IBM Plex Mono', sans-serif;
 }
@@ -160,8 +159,6 @@ h2{
   max-width: 500px;
   color: white;
   line-height: 2;
-  font-weight: 200;
-  font-size: 20px;
 }
 
 .resume-button{
@@ -241,7 +238,7 @@ h2{
   content: '';
   width: 0%;
   background-color: var(--blue);
-  height: 3px;
+  height: 1px;
   position:absolute;
   left: 0;
   bottom: 0;
@@ -265,8 +262,6 @@ h2{
 .about-me-writeup{
   max-width: 600px;
   line-height: 2;
-  font-weight: 200;
-  font-size: 20px;
 }
 
 ul{
@@ -840,7 +835,7 @@ footer lord-icon{
   content: '';
   width: 0%;
   background-color: var(--blue);
-  height: 3px;
+  height: 1px;
   position:absolute;
   left: 0;
   bottom: 0;

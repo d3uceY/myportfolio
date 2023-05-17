@@ -51,7 +51,6 @@ body{
 
 .paragraph{
     font-size: var(--paragraph-size);
-    font-weight: 100;
 }
 
 .hero-header{
@@ -170,7 +169,7 @@ a{
   content: '';
   width: 0%;
   background-color: var(--blue);
-  height: 3px;
+  height: 1px;
   position:absolute;
   left: 0;
   bottom: 0;
@@ -220,7 +219,7 @@ footer lord-icon{
   content: '';
   width: 0%;
   background-color: var(--blue);
-  height: 3px;
+  height: 1px;
   position:absolute;
   left: 0;
   bottom: 0;
