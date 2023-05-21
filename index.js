@@ -87,10 +87,10 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 //entrance animation
 
-///loader
+//loader
 var loader = document.getElementById('preloader');
 
-window.addEventListener('load', function(){
-  loader.style.display = 'none';
-})
-//loader
+ window.addEventListener('load', function(){
+   loader.style.display = 'none';
+ })
+// //loader
