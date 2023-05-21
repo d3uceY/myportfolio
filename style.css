@@ -126,11 +126,6 @@ h2{
 
 /* hero section */
 
-/* blob container */
-
-/* blob container */
-
-
 .main-container{
     padding-top: 11em;
     position: relative;
@@ -233,6 +228,14 @@ h2{
 .profile-section div{
   margin-top: 4rem;
 }
+
+.profile-svg-container{
+  position: absolute;
+  width: 400px;
+  left: -67px;
+  top: -125px;
+}
+
 
 .about-me-writeup span{
   color: #16a9c7;
