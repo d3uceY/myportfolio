@@ -229,13 +229,6 @@ h2{
   margin-top: 4rem;
 }
 
-.profile-svg-container{
-  position: absolute;
-  width: 400px;
-  left: -67px;
-  top: -125px;
-}
-
 
 .about-me-writeup span{
   color: #16a9c7;
@@ -321,6 +314,8 @@ li img{
   height: fit-content;
   width: fit-content;
 }
+
+
 
 .picture-of-me{
   max-width: 300px;
@@ -882,6 +877,7 @@ media query */
 
   .main-container{
     padding-top: 2rem;
+    overflow: hidden;
 }
 
   .about-me-writeup,
