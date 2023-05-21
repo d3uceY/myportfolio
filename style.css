@@ -230,6 +230,7 @@ h2{
 }
 
 .profile-svg-container{
+  z-index: -1;
   position: absolute;
   width: 400px;
   left: -67px;
