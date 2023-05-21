@@ -125,8 +125,15 @@ h2{
 
 
 /* hero section */
+
+/* blob container */
+
+/* blob container */
+
+
 .main-container{
     padding-top: 11em;
+    position: relative;
 
 }
 
@@ -409,7 +416,7 @@ li img{
 
 /* lifeville css */
 .project-block{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
   transition: all 0.5s ease-in-out;
  
@@ -463,7 +470,7 @@ li img{
 /* second block css */
 .project-block-2{
   aspect-ratio: 1 / 1;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
@@ -515,7 +522,7 @@ opacity: 1;
 
 /* third block css */
 .project-block-3{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
   transition: all 0.5s ease-in-out;
   
@@ -565,7 +572,7 @@ opacity: 1;
 
 /* fourth block css */
 .project-block-4{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
@@ -715,7 +722,6 @@ form{
 
 a{
   text-decoration: none !important;
-  font-size: 24px;
 }
 
 .contact-link-container{
@@ -854,7 +860,7 @@ media query */
 @media screen and (max-width: 786px) {
 
   .project-featured{
-    margin-bottom: 2rem !important;
+    margin-bottom: 4rem !important;
   }
 
   .project-header{
