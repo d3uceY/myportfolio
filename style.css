@@ -265,6 +265,7 @@ h2{
 .about-me-writeup{
   max-width: 600px;
   line-height: 2;
+  margin-bottom: 0px;
 }
 
 ul{
