@@ -5,7 +5,7 @@
 :root{
   --blue: #16a9c7;
     --grey: #1A1A1A;
-    --black: #111111;
+    --black: black;
     --paragraph-size: 26px;
     --paragraph-size-small-screen: 20px;
     --heading-size: 4rem;
@@ -136,20 +136,17 @@ h2{
     color: #ffffff;
     font-weight: 300;
     font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 16px;
 }
 
 .deuce-text{
     font-size: 8rem;
     font-weight: 800;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .iam-text{
-    color: #b1aeae;
+    color: white;
     font-size:106px;
     font-weight: 700;
 }
@@ -158,7 +155,7 @@ h2{
     line-height:1;
 }
 .hero-writeup{
-  max-width: 500px;
+  max-width: 400px;
   color: white;
   line-height: 2;
 }
@@ -320,7 +317,7 @@ li img{
 .picture-of-me{
   max-width: 300px;
   max-height: 250px;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   filter: grayscale(90%);
 }
 .overlay-container{
@@ -332,7 +329,7 @@ li img{
   opacity: 0;
   background-color: var(--blue-transparent);
   transition: all 250ms ease-in-out;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 }
 
 .overlay-container >*{
