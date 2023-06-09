@@ -609,12 +609,6 @@ opacity: 1;
 
 
 
-
-
-
-.project-block:hover{
-  
-}
 /* project-block  */
 
 
@@ -648,7 +642,6 @@ opacity: 1;
 }
 
 textarea{
-  
   padding: 20px;
   background-color: var(--grey);
   color: white;
