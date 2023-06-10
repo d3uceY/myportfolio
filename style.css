@@ -260,9 +260,9 @@ h2{
 }
 
 .about-me-writeup{
-  max-width: 600px;
+  max-width: 550px;
   line-height: 2;
-  margin-bottom: 0px;
+  text-align: justify;
 }
 
 ul{
@@ -310,6 +310,7 @@ li img{
   position: relative;
   height: fit-content;
   width: fit-content;
+  order: -1;
 }
 
 
@@ -317,8 +318,8 @@ li img{
 .picture-of-me{
   max-width: 300px;
   max-height: 250px;
-  /* border-radius: 100%; */
-  filter: grayscale(90%);
+  border-radius: 100%;
+  filter: grayscale(100%);
 }
 .overlay-container{
   position: absolute;
@@ -329,7 +330,7 @@ li img{
   opacity: 0;
   background-color: var(--blue-transparent);
   transition: all 250ms ease-in-out;
-  /* border-radius: 100%; */
+  border-radius: 100%;
 }
 
 .overlay-container >*{
@@ -399,6 +400,10 @@ li img{
 }
 
 /* project-block  */
+/* .block{
+  max-width: 700px;
+  max-height: 700px;
+} */
 
 
 /* lifeville css */
@@ -406,7 +411,6 @@ li img{
   margin-bottom: 40px;
   position: relative;
   transition: all 0.5s ease-in-out;
- 
 }
 
 .project-block:after{
@@ -742,7 +746,7 @@ a{
 
 
 .secret-code-input-container{
-  max-width: 80% !important;
+  max-width: 85% !important;
   margin-top: 4rem;
 }
 
@@ -968,7 +972,14 @@ h2{
   #navbarNavDropdown{
     text-align: center;
   }
+
+  .about-me-writeup{
+    max-width: 100% !important;
+    text-align: unset;
+   }
 }
+
+
 
 /* 
 media query */
