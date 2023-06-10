@@ -663,12 +663,16 @@ input::placeholder{
   color: white;
   font-weight: 400; 
   font-size: 24px;
+  opacity: 0.4;
+
 }
 
 textarea::placeholder{
   color: white;
   font-weight: 400;
   font-size: 24px;
+  opacity: 0.4;
+
 }
 
 .button{
@@ -738,8 +742,13 @@ a{
 
 
 .secret-code-input-container{
-  max-width: 320px;
+  max-width: 80% !important;
   margin-top: 4rem;
+}
+
+.secret-code-input{
+  font-size: 14px !important;
+
 }
 
 #submit-button{
@@ -906,12 +915,14 @@ media query */
   
 input::placeholder{
   color: white;
+  opacity: 0.4;
   font-weight: 400; 
   font-size: 16px;
 }
 
 textarea::placeholder{
   color: white;
+  opacity: 0.4;
   font-weight: 400;
   font-size: 16px;
 }

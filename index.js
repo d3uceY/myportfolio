@@ -59,7 +59,7 @@ submitButton.addEventListener('click', () => {
   }
 
   else
-  alert('Sorry. Try again. You got it wrong');
+  alert('You got it wrong. Try Again')
 
 });
 //easter egg
