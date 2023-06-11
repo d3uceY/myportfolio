@@ -76,7 +76,7 @@ const observer = new IntersectionObserver((entries) => {
           entry.target.classList.add('show')
       } 
       // else 
-      // entry.target.classList.remove('show')
+//       // entry.target.classList.remove('show')
   })
 })
 
@@ -94,3 +94,46 @@ var loader = document.getElementById('preloader');
    loader.style.display = 'none';
  })
  //loader
+
+
+
+
+
+
+//  GSAP animation
+
+gsap.from('.nav-item', {
+  opacity: 0,
+  duration: .5,
+  stagger: .5,
+  y: -20,
+  scrollTrigger: '.nav-item'
+})
+
+
+gsap.from('.hero-animate', {
+  opacity: 0,
+  duration: .3,
+  stagger: .1,
+  delay: 1,
+  y: 20,
+  scrollTrigger: '.hero-animate'
+})
+
+
+gsap.from('.lottie-hero-svg', {
+  delay: 1,
+  opacity: 0,
+  duration: .3,
+  scrollTrigger: '.lottie-hero-svg',
+  y: -150
+})
+
+gsap.from('.image-container', {
+  opacity: 0,
+  duration: .6,
+  scrollTrigger: '.image-container',
+  x: -200
+})
+
+
