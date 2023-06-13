@@ -166,7 +166,6 @@ gsap.from('.footer-list', {
 
 
 gsap.to('#preloader', {
-  scale: 0,
   display: 'none',
   duration: 2
 })
