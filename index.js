@@ -87,13 +87,13 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 //entrance animation
 
-//loader
-var loader = document.getElementById('preloader');
+//pre-loader
+// var loader = document.getElementById('preloader');
 
- window.addEventListener('load', function(){
-   loader.style.display = 'none';
- })
- //loader
+//  window.addEventListener('load', function(){
+//    loader.style.display = 'none';
+//  })
+ //pre-loader
 
 
 
@@ -103,37 +103,74 @@ var loader = document.getElementById('preloader');
 //  GSAP animation
 
 gsap.from('.nav-item', {
-  opacity: 0,
-  duration: .5,
+  opacity: 0.01,
+  duration: 1,
   stagger: .5,
-  y: -20,
-  scrollTrigger: '.nav-item'
+  y: '-20%',
 })
 
 
 gsap.from('.hero-animate', {
-  opacity: 0,
-  duration: .3,
-  stagger: .1,
-  delay: 1,
+  opacity: 0.01,
+  duration: .8,
+  stagger: .2,
+  delay: 2.2,
   y: 20,
-  scrollTrigger: '.hero-animate'
 })
 
 
 gsap.from('.lottie-hero-svg', {
-  delay: 1,
-  opacity: 0,
-  duration: .3,
-  scrollTrigger: '.lottie-hero-svg',
-  y: -150
+  delay: 2.2,
+  opacity: 0.01,
+  duration: .8,
+  x: '-20%'
 })
 
 gsap.from('.image-container', {
-  opacity: 0,
+  delay: 0.2,
+  opacity: 0.01,
   duration: .6,
+  x: '-20%',
   scrollTrigger: '.image-container',
-  x: -200
 })
+
+gsap.from('.write-ups', {
+  delay: 0.2,
+  opacity: .01,
+  duration: .6,
+  y: '20%',
+  scrollTrigger: '.write-ups',
+
+})
+
+gsap.from('.form-container', {
+  opacity: 0.01,
+  duration: 1,
+  y: '20%',
+  scrollTrigger: '.form-container',
+})
+
+gsap.from('.contact-icon', {
+  duration: .5,
+  opacity: .01,
+  scrollTrigger: '.contact-icon'
+})
+
+gsap.from('.footer-list', {
+  duration: 1,
+  opacity: 0.01,
+  y: 20,
+  stagger: .5,
+  scrollTrigger: '.footer-list'
+})
+
+
+gsap.to('#preloader', {
+  scale: 0,
+  display: 'none',
+  duration: 2
+})
+
+//  GSAP animation
 
 
