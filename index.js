@@ -165,10 +165,10 @@ gsap.from('.footer-list', {
 })
 
 
-gsap.to('#preloader', {
-  display: 'none',
-  duration: 2
-})
+// gsap.to('#preloader', {
+//   display: 'none',
+//   duration: 2
+// })
 
 //  GSAP animation
 

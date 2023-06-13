@@ -23,7 +23,7 @@
 }
 
 /* loader */
-#preloader{
+/* #preloader{
   background: var(--black) url(/assets/pacman.svg) no-repeat center;
   background-size: 30%;
   height: 100vh;
@@ -31,7 +31,7 @@
   position: fixed;
   z-index: 100;
 }
-/* loader */
+loader */
 
 
 
