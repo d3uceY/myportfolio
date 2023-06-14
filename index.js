@@ -87,6 +87,12 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 //entrance animation
 
+
+
+
+
+
+
 //pre-loader
 // var loader = document.getElementById('preloader');
 
@@ -138,14 +144,14 @@ gsap.from('.write-ups', {
   delay: 0.2,
   opacity: .01,
   duration: .6,
-  y: '20%',
+  y: '10%',
   scrollTrigger: '.write-ups',
 
 })
 
 gsap.from('.form-container', {
   opacity: 0.01,
-  duration: 1,
+  duration: .8,
   y: '20%',
   scrollTrigger: '.form-container',
 })
@@ -157,18 +163,12 @@ gsap.from('.contact-icon', {
 })
 
 gsap.from('.footer-list', {
-  duration: 1,
+  duration: .6,
   opacity: 0.01,
   y: 20,
   stagger: .5,
   scrollTrigger: '.footer-list'
 })
-
-
-// gsap.to('#preloader', {
-//   display: 'none',
-//   duration: 2
-// })
 
 //  GSAP animation
 

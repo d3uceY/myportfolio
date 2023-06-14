@@ -9,7 +9,7 @@
 :root{
     --blue: #16a9c7;
     --grey: #1A1A1A;
-    --black: #111111;
+    --black: black;
     --paragraph-size: 26px;
     --paragraph-size-small-screen: 16px;
     --heading-size: 4rem;
