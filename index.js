@@ -107,29 +107,28 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 //  GSAP animation
-
-gsap.from('.nav-item', {
-  opacity: 0.01,
-  duration: 1,
-  stagger: .5,
-  y: '-20%',
+gsap.from('#NavBar', {
+  opacity:0.01,
+  duration: .5,
+  y:'-20%',
+  ease: "power2.out"
 })
 
 
 gsap.from('.hero-animate', {
   opacity: 0.01,
-  duration: .8,
-  stagger: .2,
-  delay: 2.2,
-  y: 20,
+  duration: .5,
+  delay: .5,
+  x: '-20%',
+  ease: "power2.out"
 })
 
-
 gsap.from('.lottie-hero-svg', {
-  delay: 2.2,
   opacity: 0.01,
-  duration: .8,
-  x: '-20%'
+  duration: .5,
+  delay: 1,
+  x: '20%',
+  ease: "power2.out"
 })
 
 gsap.from('.image-container', {
