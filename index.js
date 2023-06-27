@@ -110,13 +110,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 gsap.from('#NavBar', {
   opacity:0.01,
   duration: .5,
-  y:'-20%',
+  y:'-20px',
   ease: "power2.out"
 })
 
 
 gsap.from('.hero-animate', {
-  opacity: 0.01,
+  opacity: 0,
   duration: .5,
   delay: .5,
   x: '-20%',
