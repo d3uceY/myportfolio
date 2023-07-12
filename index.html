@@ -1,321 +1,282 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deuce</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <!-- gsap script tag for  it to be loaded before the rest -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>   <!-- so my animation will load first before website fully loads for fast rendering -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-     <!-- gsap script tag for  it to be loaded before the rest -->
-  </head>
-  
-  <body>
 
-    <!-- navigation section -->
-    <header>
-      <nav class="navbar navbar-expand-lg container" id="NavBar">
-          <div class="container-fluid">
-            <a class="navbar-brand" id="navbar-logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank"><span class="euce" style="color: transparent;">/dEuc3 </span></a>   
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="toggler-icon top-bar">
-                <lord-icon
-                class="toggler-lordicon"
-                src="https://cdn.lordicon.com/phtfmmnb.json"
-                trigger="static"
-                colors="primary:#ffffff,secondary:#ffffff"
-                style="width:50px;height:50px">
-            </lord-icon></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home<lord-icon
-                    src="https://cdn.lordicon.com/gmzxduhd.json"
-                    trigger="loop"
-                    colors="primary:#ffffff,secondary:#ffffff"
-                    style="width:25px;height:25px"></a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deuce</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <!-- gsap script tag for  it to be loaded before the rest -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <!-- so my animation will load first before website fully loads for fast rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- gsap script tag for  it to be loaded before the rest -->
+</head>
+
+<body>
+
+  <!-- navigation section -->
+  <header>
+    <nav class="navbar navbar-expand-lg container" id="NavBar">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="navbar-logo"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+          target="_blank"><span class="euce" style="color: transparent;">/dEuc3 </span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar">
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <l i class="nav-item">
+              <a class="nav-link" href="#about-container">About</a>
+            </l>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-contact-button" href="#contacts">Contact</a>
+            </li>
+            <li class="nav-item dropdown text">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- navigation section ends here-->
+
+  <!-- main container starts here -->
+  <div id="main-container" class="container main-container">
+
+    <!-- about section -->
+    <div class="about-container  container">
+      <!-- first section -->
+      <div class="d-lg-flex justify-content-between hero">
+        <div class="first-section hero-animate">
+          <h3 class="hello-text ">Hello!</h3>
+          <p class="d-flex flex-column "> <span class="iam-text">I am </span> <span class="deuce-text">Deuce</span></p>
+          <div class="typing-effect ">
+            <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+          </div>
+          <p class="hero-writeup ">I bring a unique perspective to the industry.
+            With a passion for solving complex problems and a commitment to staying up-to-date with the latest
+            technologies</p>
+          <a class="resume-link " href="/assets/Resume.pdf" target="_blank" download><button
+              class="resume-button">Download Resume</button></a>
+        </div>
+
+        <div class="lottie-hero-svg d-lg-block d-none">
+          <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_6A3c3UEfOh.json" background="transparent"
+            speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+        </div>
+      </div>
+
+      <!-- second section -->
+      <div class="profile-section" id="about-container">
+        <div class="d-flex sub-header-containers">
+          <h2 class="text-white"><span>.</span> About Me</h2>
+
+        </div>
+
+        <div class="d-lg-flex justify-content-between gap-5">
+          <div class="write-ups text-xm-center">
+            <p class="about-me-writeup text-white ">Hi, i'm <i>ONYEKWELU</i> <span>"deuce"</span> <i>JESSE</i> and i
+              enjoy creating things on the internet.
+              My journey as a web developer began with a passion to learn and create. This led me to <span><a
+                  href="https://www.stutern.com/" target="_blank">Stutern</a> </span> ,
+              where I honed my skills and learned the intricacies of the craft. I found a supportive community of
+              colleagues who inspired and made the journey enjoyable, fueling my passion for web development.
+              Learning HTML and CSS became clear and easy with their encouragement and positive atmosphere.
+            </p>
+            <P class="text-white about-me-writeup ">Fast-forward today, and i've had the priviledge to work at a
+              Healthcare Agency,
+              a start-up and a student-led design studio</P>
+
+            <p class="text-white about-me-writeup ">Here are some technologies that i've been working with:</p>
+            <div class="listed-items text-white row text-align-end">
+              <ul class="row">
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/javascript.svg">Javascript
                 </li>
-                <l  i class="nav-item">
-                  <a class="nav-link" href="#about-container">About<lord-icon
-                    src="https://cdn.lordicon.com/tyounuzx.json"
-                    trigger="loop"
-                    colors="primary:#ffffff,secondary:#ffffff"
-                    style="width:25px;height:25px;">
-                 </lord-icon></a>
-                </l>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects<lord-icon
-                    src="https://cdn.lordicon.com/kqxqomzp.json"
-                    trigger="loop"
-                    colors="primary:#ffffff,secondary:#ffffff"
-                    style="width:25px;height:25px">
-                </lord-icon></a>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/react.svg">ReactJs</li>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/git.svg">Git</li>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/tailwind-css.svg">Tailwind
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="nav-contact-button" href="#contacts">Contact<lord-icon
-                    src="https://cdn.lordicon.com/zpxybbhl.json"
-                    trigger="loop"
-                    colors="primary:#ffffff,secondary:#ffffff"
-                    style="width:25px;height:25px">
-                    </lord-icon></a>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/bootstrap.svg">Bootstrap</li>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/vscode.svg">Visual Studio
                 </li>
-                <li class="nav-item dropdown text">
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/material.svg">Material UI
                 </li>
               </ul>
             </div>
-          </div>
-        </nav>
-    </header>
-        <!-- navigation section ends here-->
-        
-        <!-- main container starts here -->
-    <div id="main-container" class="container main-container">
 
-      <!-- about section -->
-      <div class="about-container  container">
-        <!-- first section -->
-        <div class="d-lg-flex justify-content-between hero">
-          <div class="first-section hero-animate">
-            <h3 class="hello-text ">Hello!</h3>
-            <p class="d-flex flex-column "> <span class="iam-text">I am </span> <span class="deuce-text">Deuce</span></p>
-            <div class="typing-effect ">
-              <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-            </div>
-            <p class="hero-writeup ">I bring a unique perspective to the industry.
-               With a passion for solving complex problems and a commitment to staying up-to-date with the latest technologies</p>
-               <a class="resume-link " href="/assets/Resume.pdf" target="_blank" download><button class="resume-button">Download Resume</button></a>
           </div>
 
-          <div class="lottie-hero-svg d-lg-block d-none">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_6A3c3UEfOh.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>          </div>
-        </div>
-       
-        <!-- second section -->
-        <div class="profile-section" id="about-container"> 
-          <div class="d-flex sub-header-containers">
-            <h2 class="text-white"><span>.</span> About Me</h2>
-            <lord-icon
-            class="header-lordicon"
-               src="https://cdn.lordicon.com/tyounuzx.json"
-               trigger="loop"
-               colors="primary:#ffffff,secondary:#16a9c7">
-            </lord-icon>
-          </div>
-         
-          <div class="d-lg-flex justify-content-between gap-5">
-            <div class="write-ups text-xm-center">
-              <p class="about-me-writeup text-white ">Hi, i'm <i>ONYEKWELU</i> <span>"deuce"</span> <i>JESSE</i> and i enjoy creating things on the internet. 
-                My journey as a web developer began with a passion to learn and create. This led me to <span><a href="https://www.stutern.com/" target="_blank">Stutern</a> </span> , 
-                where I honed my skills and learned the intricacies of the craft. I found a supportive community of colleagues who inspired and made the journey enjoyable, fueling my passion for web development.
-                 Learning HTML and CSS became clear and easy with their encouragement and positive atmosphere.
-               </p>
-               <P class="text-white about-me-writeup ">Fast-forward today, and i've had the priviledge to work at a Healthcare Agency,
-                 a start-up and a student-led design studio</P>
+          <div class="image-container d-block mx-auto">
+            <img class="picture-of-me img-fluid" src="/assets/profile-pic.png">
+            <div class="overlay-container">
+              <div class="overlay">
+                <P class="profile-name text-white">Onyekwelu Jesse</P>
+                <P class="profile-description text-white">Software Developer</P>
+                <div class="profile-icon-container">
 
-                 <p class="text-white about-me-writeup ">Here are some technologies that i've been working with:</p>
-                 <div class="listed-items text-white row text-align-end">
-                  <ul class="row">
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/javascript.svg">Javascript</li>
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/react.svg">ReactJs</li>
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/git.svg">Git</li>
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/tailwind-css.svg">Tailwind</li>
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/bootstrap.svg">Bootstrap</li>
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/vscode.svg">Visual Studio</li>
-                    <li class="technologies col-md-auto "><img class="list-icons" src="/assets/material.svg">Material UI</li>
-                   </ul>
-                 </div>
-                 
-            </div>
-           
-            <div class="image-container d-block mx-auto">
-                <img class="picture-of-me img-fluid" src="/assets/profile-pic.png">
-                <div class="overlay-container">
-                  <div class="overlay">
-                    <P class="profile-name text-white">Onyekwelu Jesse</P>
-                    <P class="profile-description text-white">Software Developer</P>
-                    <div class="profile-icon-container">
-                    <lord-icon
-                      class="profile-icon"
-                      src="https://cdn.lordicon.com/nobciafz.json"
-                      trigger="loop"
-                      colors="primary:#ffffff,secondary:#ffffff"
-                      style="width:80px;height:80px">
-                   </lord-icon>
-                    </div>
-                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-          
+      </div>
+
+    </div>
+    <!-- about section ends here -->
+
+    <!-- project section starts here -->
+    <div id="projects" class="project-container ">
+      <div>
+        <div class="d-flex sub-header-containers container">
+          <h2 class="text-white"><span>.</span> My Works</h2>
+
         </div>
-           <!-- about section ends here -->
-            
-           <!-- project section starts here -->
-      <div id="projects" class="project-container ">
-          <div>
-            <div class="d-flex sub-header-containers container">
-              <h2 class="text-white"><span>.</span> My Works</h2>
-              <lord-icon
-              class="works-icon header-lordicon"
-              src="https://cdn.lordicon.com/kqxqomzp.json"
-              trigger="loop"
-              colors="primary:#16a9c7,secondary:#ffffff">
-          </lord-icon>
-            </div>
-          
-         <div class="project container">
+
+        <div class="project container">
           <p class="text-white project-header h5">Here are some of the things i've worked on</p>
           <pre class="project-featured h6">Selected Projects</pre>
-              <div class="projects row justify-content-center">
-                <a href="/pages/project-block-1.html" class="col-lg-6 hidden">  
-                  <div class="project-block ">
-                  <img src="/assets/lifeville.svg" class="project-image" alt="">
-            
-                 </div></a>
-                 
+          <div class="projects row justify-content-center">
+            <a href="/pages/project-block-1.html" class="col-lg-6 hidden">
+              <div class="project-block ">
+                <img src="/assets/lifeville.svg" class="project-image" alt="">
 
-                 <a href="/pages/project-block-2.html" class="col-lg-6 hidden" >  
-                  <div class="project-block-2">
-                  <img src="/assets/lalasia.svg" class="project-image" alt="">
-              
-                 </div></a>
+              </div>
+            </a>
 
-                 <a href="/pages/project-block-3.html" class="col-lg-6 hidden">  
-                  <div class="project-block-3">
-                  <img src="/assets/citrone.svg" class="project-image" alt="">
-        
-                 </div></a>
 
-                 <!-- <a href="" class="col-lg-6 ">  <div class="project-block-4 ">
+            <a href="/pages/project-block-2.html" class="col-lg-6 hidden">
+              <div class="project-block-2">
+                <img src="/assets/lalasia.svg" class="project-image" alt="">
+
+              </div>
+            </a>
+
+            <a href="/pages/project-block-3.html" class="col-lg-6 hidden">
+              <div class="project-block-3">
+                <img src="/assets/citrone.svg" class="project-image" alt="">
+
+              </div>
+            </a>
+
+            <!-- <a href="" class="col-lg-6 ">  <div class="project-block-4 ">
                   <img src="/assets/incomplete.webp" class="project-image" alt="">
                  
                  </div></a> -->
-              </div>
-         </div>
-
-      </div>
-      </div>
-        <!-- project section ends here -->
-
-        <!-- contact section starts Here -->
-        <div id="contacts" class="contact-container container">
-          <div class="d-flex sub-header-containers">
-            <h2 class="text-white"><span>.</span> Say Hello!</h2>
-            <lord-icon
-            class="header-lordicon"
-            src="https://cdn.lordicon.com/zpxybbhl.json"
-            trigger="loop"
-            colors="primary:#ffffff,secondary:#30c9e8">
-            </lord-icon>
           </div>
-
-          <div class="contact-container-content">
-            <h1 class="contact-form-header h5 text-white container">Contact Me Using Form Or Reach out Directly:</h1>
-            <div class="d-xl-flex justify-content-between">
-              <!-- text boxes -->
-              <form class="form-container" action="https://formsubmit.co/onyekwelujesse1234@gmail.com" method="POST">
-                <div class="row">
-                  <input name="Name" type="text" placeholder="Full Name" class="col-lg mb-3 me-3"  value="" required>
-                  <input name="Email" type="Email" placeholder="Email" class="col-lg mb-3" value="" required>
-                </div>
-                <div class="row">
-                  <textarea name="message" value="" placeholder="Send me a message" type="text" cols="50" rows="5" class="col mb-3"></textarea>
-                  <button class="col-12 button" type="submit">
-                    <lord-icon
-                    class="send-icon"
-                    src="https://cdn.lordicon.com/rhvddzym.json"
-                    trigger="loop"
-                    colors="primary:#121331,secondary:#242424"
-                    stroke="100"
-                    style="width:60px;height:50px">
-                </lord-icon>
-                    Send Message.</button>
-                </div>
-              </form>
-              <!-- text boxes -->
-              <div class="contacts">
-                <div>
-                  <div>
-                      <ul class="text-start p-0  container text-center">
-                         <a target="_blank" href="https://www.linkedin.com/in/jesse-onyekwelu-4a8982275/"> <i class="fab fa-linkedin contact-icon"></i> </a> 
-                         <a target="_blank" href="mailto:onyekwelujesse1234@gmail.com"> <i class="fa-solid fa-envelope contact-icon"></i> </a> 
-                         <a target="_blank" href="https://wa.me/message/2PXDNACZN3AMM1"> <i class="fab fa-whatsapp contact-icon"></i> </a> 
-                         <a target="_blank" href="https://github.com/d3uceY"> <i class="fab fa-github contact-icon"></i> </a> 
-                      </ul>
-                    </div>
-
-                    <div class="secret-code-input-container container ">
-                      <p class="text-white text-center">Enter the Secret Code:</p>
-                      <pre class="text-white text-center">hint: hover over an element.</pre>
-                      <div class="row">
-                        <input class="secret-code-input text-center" type="text" id="secret-code-input"> <br>
-                        <button id="submit-button" class="color-change-2x">
-                          <lord-icon
-                          src="https://cdn.lordicon.com/nkmsrxys.json"
-                          trigger="loop"
-                          colors="primary:#121331,secondary:#000000"
-                          stroke="100"
-                          style="width:20px;height:20px">
-                          </lord-icon>
-                      Submit</button>
-                      </div>
-                    </div>
-                  </div>
-                 
-              
-              </div> 
-            </div>
-          </div>
-
         </div>
-        <!-- contact section ends here -->
+
       </div>
-      
-        <!-- main container ends here -->
-        <footer class="container footer-1 ">
-          <ul class="row">
-            <li class=" col-sm-12 col-lg-3 text-white footer-list">
-              <lord-icon
-              src="https://cdn.lordicon.com/gmzxduhd.json"
-              trigger="loop"
-              colors="primary:#ffffff,secondary:#ffffff"
-              style="width:25px;height:25px">
-          </lord-icon><a id="footer-links" href="#">Home</a></li>
-            <li class=" col-sm-12 col-lg-3 text-white footer-list"> 
-             <lord-icon
-              src="https://cdn.lordicon.com/tyounuzx.json"
-              trigger="loop"
-              colors="primary:#ffffff,secondary:#ffffff"
-              style="width:25px;height:25px;">
-           </lord-icon><a id="footer-links" href="#about-container">About</a></li>
-            <li class=" col-sm-12 col-lg-3 text-white footer-list">
-              <lord-icon
-              src="https://cdn.lordicon.com/kqxqomzp.json"
-              trigger="loop"
-              colors="primary:#ffffff,secondary:#ffffff"
-              style="width:25px;height:25px">
-          </lord-icon><a id="footer-links" href="#projects"> Projects</a></li>
-            <li class=" col-sm-12 col-lg-3 text-white footer-list"> 
-               <lord-icon
-              src="https://cdn.lordicon.com/zpxybbhl.json"
-              trigger="loop"
-              colors="primary:#ffffff,secondary:#ffffff"
-              style="width:25px;height:25px">
-              </lord-icon>  <a id="footer-links" href="#contacts">Contact Me</a></li>
-  
-          </ul>
-        </footer>
-        <footer class="container  footer-2"> <span>Designed & Built By Onyekwelu Jesse</span> </footer>
-        <script src="/index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-        <script src="/index.js"></script>
-  </body>
+    </div>
+    <!-- project section ends here -->
+
+    <!-- contact section starts Here -->
+    <div id="contacts" class="contact-container container">
+      <div class="d-flex sub-header-containers">
+        <h2 class="text-white"><span>.</span> Say Hello!</h2>
+
+      </div>
+
+      <div class="contact-container-content">
+        <h1 class="contact-form-header h5 text-white container">Contact Me Using Form Or Reach out Directly:</h1>
+        <div class="d-xl-flex justify-content-between">
+          <!-- text boxes -->
+          <form class="form-container" action="https://formsubmit.co/onyekwelujesse1234@gmail.com" method="POST">
+            <div class="row">
+              <input name="Name" type="text" placeholder="Full Name" class="col-lg mb-3 me-3" value="" required>
+              <input name="Email" type="Email" placeholder="Email" class="col-lg mb-3" value="" required>
+            </div>
+            <div class="row">
+              <textarea name="message" value="" placeholder="Send me a message" type="text" cols="50" rows="5"
+                class="col mb-3"></textarea>
+              <button class="col-12 button" type="submit">
+
+                Send Message.</button>
+            </div>
+          </form>
+          <!-- text boxes -->
+          <div class="contacts">
+            <div>
+              <div>
+                <ul class="text-start p-0  container text-center">
+                  <a target="_blank" href="https://www.linkedin.com/in/jesse-onyekwelu-4a8982275/"> <i
+                      class="fab fa-linkedin contact-icon"></i> </a>
+                  <a target="_blank" href="mailto:onyekwelujesse1234@gmail.com"> <i
+                      class="fa-solid fa-envelope contact-icon"></i> </a>
+                  <a target="_blank" href="https://wa.me/message/2PXDNACZN3AMM1"> <i
+                      class="fab fa-whatsapp contact-icon"></i> </a>
+                  <a target="_blank" href="https://github.com/d3uceY"> <i class="fab fa-github contact-icon"></i> </a>
+                </ul>
+              </div>
+
+              <div class="secret-code-input-container container ">
+                <p class="text-white text-center">Enter the Secret Code:</p>
+                <pre class="text-white text-center">hint: Know Javascript.</pre>
+                <div class="row">
+                  <input class="secret-code-input text-center" type="text" id="secret-code-input"> <br>
+                  <button id="submit-button" class="color-change-2x">
+
+                    Submit</button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- contact section ends here -->
+  </div>
+
+  <!-- main container ends here -->
+  <footer class="container footer-1 ">
+    <ul class="row">
+      <li class=" col-sm-12 col-lg-3 text-white footer-list">
+        <a id="footer-links" href="#">Home</a>
+      </li>
+      <li class=" col-sm-12 col-lg-3 text-white footer-list">
+        <a id="footer-links" href="#about-container">About</a>
+      </li>
+      <li class=" col-sm-12 col-lg-3 text-white footer-list">
+        <a id="footer-links" href="#projects"> Projects</a>
+      </li>
+      <li class=" col-sm-12 col-lg-3 text-white footer-list">
+        <a id="footer-links" href="#contacts">Contact Me</a>
+      </li>
+
+    </ul>
+  </footer>
+  <footer class="container  footer-2"> <span>Designed & Built By Onyekwelu Jesse</span> </footer>
+  <script src="/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="/index.js"></script>
+</body>
+
 </html>
