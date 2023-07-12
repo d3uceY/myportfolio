@@ -74,7 +74,6 @@ h2{
   left: 0;
   right: 0;
   height: 4px;
-  border-radius: calc(4px / 2);
   background: white;
   color: inherit;
   opacity: 1;
