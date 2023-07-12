@@ -110,8 +110,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 gsap.from('#NavBar', {
   opacity:0.01,
   duration: .5,
-  y:'-20px',
-  ease: "power2.out"
+  y:'-80px',
 })
 
 
@@ -165,7 +164,7 @@ gsap.from('.footer-list', {
   duration: .6,
   opacity: 0.01,
   y: 20,
-  stagger: .5,
+  stagger: .3,
   scrollTrigger: '.footer-list'
 })
 

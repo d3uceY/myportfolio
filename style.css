@@ -164,6 +164,9 @@ h2{
 
 
 /* hero section */
+.hero{
+  min-height: 100vh;
+}
 
 .main-container{
     padding-top: 11em;
@@ -256,8 +259,11 @@ h2{
 
 /*about me section css */
 
+
+
 .profile-section{
   margin-top: 15rem;
+  min-height: 100vh;
 }
 
 
