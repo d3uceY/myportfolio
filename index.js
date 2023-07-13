@@ -107,17 +107,20 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 //  GSAP animation
-gsap.from('#NavBar', {
+gsap.from('.nav-link', {
   opacity:0.01,
-  duration: .5,
-  y:'-80px',
+  duration: .6,
+  stagger: .2,
+  y:'-80%',
+  scrollTrigger: '.nav-link'
 })
 
 
 gsap.from('.hero-animate', {
   opacity: 0,
   duration: .5,
-  delay: .5,
+  delay: .7,
+  stagger: .2,
   x: '-20%',
   ease: "power2.out"
 })
@@ -125,7 +128,7 @@ gsap.from('.hero-animate', {
 gsap.from('.lottie-hero-svg', {
   opacity: 0.01,
   duration: .5,
-  delay: 1,
+  delay: 1.6,
   x: '20%',
   ease: "power2.out"
 })
