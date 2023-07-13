@@ -146,6 +146,10 @@ h2{
     color: transparent;
 }
 
+#navbar-toggler{
+  padding: 0px;
+}
+
 .nav-link lord-icon{
   position: relative;
   top: 6px;
@@ -287,8 +291,7 @@ h2{
 
 
 .profile-section{
-  margin-top: 15rem;
-  min-height: 100vh;
+  margin-top: 10rem;
 }
 
 
@@ -1014,6 +1017,10 @@ h2{
 
 
 @media screen and (max-width: 991px) {
+  .hero{
+    min-height: 100%;
+  }
+
   #NavBar{
     border-bottom: 1px solid white;
     border-image-source:radial-gradient(circle farthest-corner at center center, #FFFFFF 0%, #111111 100%);

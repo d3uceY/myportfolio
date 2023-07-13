@@ -186,6 +186,10 @@ a{
   background-color: var(--black);
 }
 
+#navbar-toggler{
+  padding: 0px;
+}
+
 #navbar-logo{
     font-size: 40px;
     position: relative;
