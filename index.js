@@ -121,7 +121,7 @@ gsap.from('.hero-animate', {
   duration: .5,
   delay: .7,
   stagger: .2,
-  x: '-20%',
+  y: '20%',
   ease: "power2.out"
 })
 
