@@ -168,22 +168,10 @@ h2 {
 
 .nav-link {
   position: relative;
+  padding: 0px !important;
 }
 
-.nav-link:before {
-  content: '';
-  width: 0%;
-  background-color: var(--blue);
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: all 250ms ease-in-out;
-}
 
-.nav-link:hover::before {
-  width: 100%;
-}
 
 /* .navbar */
 
@@ -323,20 +311,8 @@ h2 {
   position: relative;
 }
 
-.about-me-writeup span::before {
-  content: '';
-  width: 0%;
-  background-color: var(--blue);
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: all 250ms ease-in-out;
-}
 
-.about-me-writeup span:hover::before {
-  width: 100%;
-}
+
 
 .about-me-writeup i {
   font-style: normal;
@@ -494,7 +470,7 @@ input {
 input::placeholder {
   color: white;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   opacity: 0.4;
 
 }
@@ -502,7 +478,7 @@ input::placeholder {
 textarea::placeholder {
   color: white;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   opacity: 0.4;
 
 }
@@ -649,20 +625,6 @@ footer span {
 }
 
 
-#footer-links::before {
-  content: '';
-  width: 0%;
-  background-color: var(--blue);
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: all 250ms ease-in-out;
-}
-
-#footer-links:hover::before {
-  width: 100%;
-}
 
 /* footer css */
 

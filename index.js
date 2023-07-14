@@ -138,8 +138,8 @@ gsap.from('.write-ups', {
 
 gsap.from('.form-container', {
   opacity: 0.01,
-  duration: .8,
-  y: '20%',
+  duration: .6,
+  y: '30%',
   scrollTrigger: '.form-container',
 })
 
@@ -155,6 +155,13 @@ gsap.from('.footer-list', {
   stagger: .5,
   y: 20,
   scrollTrigger: '.footer-list'
+})
+
+
+gsap.from('.contacts', {
+  duration: 2,
+  opacity: 0.01,
+  scrollTrigger: '.contacts'
 })
 
 
