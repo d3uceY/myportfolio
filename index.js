@@ -64,35 +64,6 @@ submitButton.addEventListener('click', () => {
 });
 //easter egg
 
-
-
-
-//entrance animation
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting){
-          entry.target.classList.add('show')
-      } 
-      // else 
-//       // entry.target.classList.remove('show')
-  })
-})
-
-
-
-
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
-//entrance animation
-
-
-
-
-
-
-
 //pre-loader
 // var loader = document.getElementById('preloader');
 
@@ -101,12 +72,27 @@ hiddenElements.forEach((el) => observer.observe(el));
 //  })
  //pre-loader
 
-
-
-
-
-
 //  GSAP animation
+gsap.from('#project-container-1', {
+  opacity:0.01,
+  duration: .6,
+  x: '20%',
+  scrollTrigger: '#project-container-1'
+})
+
+gsap.from('#project-container-2', {
+  opacity:0.01,
+  duration: .6,
+  x: '-20%',
+  scrollTrigger: '#project-container-2'
+})
+
+gsap.from('#project-container-3', {
+  opacity:0.01,
+  duration: .6,
+  x: '20%',
+  scrollTrigger: '#project-container-3'
+})
 gsap.from('.nav-link', {
   opacity:0.01,
   duration: .6,
@@ -166,10 +152,13 @@ gsap.from('.contact-icon', {
 gsap.from('.footer-list', {
   duration: .6,
   opacity: 0.01,
+  stagger: .5,
   y: 20,
-  stagger: .3,
   scrollTrigger: '.footer-list'
 })
+
+
+
 
 //  GSAP animation
 
