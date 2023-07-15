@@ -294,7 +294,6 @@ h2 {
 
 
 .profile-section {
-  min-height: 100vh;
   margin-top: 10rem;
 }
 
@@ -324,10 +323,17 @@ h2 {
   color: var(--blue);
 }
 
+.about-description-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .about-me-writeup {
-  max-width: 550px;
   line-height: 2;
-  text-align: justify;
+  max-width: 250px;
+  font-size: 14px;
 }
 
 ul {
@@ -366,50 +372,6 @@ li img {
 /* sub-header-containers */
 
 /* profile picture css */
-.image-container {
-  position: relative;
-  height: fit-content;
-  width: fit-content;
-  order: -1;
-  overflow: hidden;
-}
-
-
-
-.picture-of-me {
-  max-width: 300px;
-  max-height: 250px;
-  border-radius: 5px;
-  filter: grayscale(100%);
-}
-
-.overlay-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  top: -64px;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: var(--blue-transparent);
-  transition: all 250ms ease-in-out;
-  border-radius: 5px;
-}
-
-.overlay-container>* {
-  transform: translateY(20px);
-  transition: all 400ms ease-in-out;
-}
-
-.overlay-container:hover>* {
-  transform: translateY(0px);
-}
-
-.overlay-container:hover {
-  opacity: 1;
-}
 
 .profile-name,
 .profile-description {
