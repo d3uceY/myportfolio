@@ -180,7 +180,7 @@ h2 {
 
 /* hero section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .main-container {
@@ -302,9 +302,7 @@ h2 {
 }
 
 
-.profile-section div {
-  margin-top: 4rem;
-}
+
 
 
 .about-me-writeup span {
@@ -332,6 +330,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
+  margin-top: 4rem;
 }
 
 .about-me-writeup {
@@ -692,23 +691,21 @@ media query */
 
 
 @media screen and (max-width: 991px) {
-  .hero {
-    min-height: 100%;
+  .hero{
+    min-height: 80vh;
   }
-
+ 
   #NavBar {
     border-bottom: 1px solid white;
     border-image-source: radial-gradient(circle farthest-corner at center center, #FFFFFF 0%, #111111 100%);
     border-image-slice: 1;
   }
 
-  .nav-item {
+  .nav-item:not(:last-child) {
     margin-right: 0px !important;
+    margin-bottom: 15px;
   }
 
-  .nav-link:hover::before {
-    width: 0%;
-  }
 
   .navbar-nav {
     display: flex !important;
@@ -718,10 +715,6 @@ media query */
 
   .nav-link:hover {
     opacity: 0.6;
-  }
-
-  #navbarNavDropdown {
-    text-align: center;
   }
 
   .about-me-writeup {
