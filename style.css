@@ -34,7 +34,9 @@
 }
 loader */
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 * {
