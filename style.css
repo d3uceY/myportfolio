@@ -594,10 +594,21 @@ footer span {
 media query */
 @media screen and (max-width: 786px) {
 
-
   .resume-button {
     font-size: 13px;
     margin-top: 1.2rem;
+  }
+
+  .about-description-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: unset;
+    gap: 0px;
+  }
+
+  .about-me-writeup{
+    max-width: 100%;
   }
 
   .about-me-writeup span a {
@@ -612,7 +623,7 @@ media query */
   .about-me-writeup,
   .hero-writeup,
   .technologies {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   #navbar-logo {
@@ -657,7 +668,7 @@ media query */
     color: white;
     opacity: 0.4;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   textarea::placeholder {
@@ -710,7 +721,6 @@ media query */
   }
 
   .about-me-writeup {
-    max-width: 100% !important;
     text-align: unset;
   }
 }
