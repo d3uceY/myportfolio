@@ -613,6 +613,7 @@ footer span {
   cursor: pointer;
   position: relative;
   border: 1px solid white;
+  mix-blend-mode: difference;
 }
 
 .arrow path {
@@ -630,6 +631,15 @@ footer span {
   bottom: -18px;
   opacity: 0;
   transition-duration: .7s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover{
+  background: white;
+}
+
+.Btn:hover .arrow path{
+  fill: black;
 }
 
 .Btn:hover .text {
@@ -639,6 +649,7 @@ footer span {
 
 .Btn:hover .arrow {
   animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 @keyframes slide-in-bottom {
