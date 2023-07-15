@@ -76,7 +76,7 @@ h2 {
   position: absolute;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: white;
   color: inherit;
   opacity: 1;
@@ -180,7 +180,7 @@ h2 {
 
 /* hero section */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .main-container {
