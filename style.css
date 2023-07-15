@@ -295,6 +295,8 @@ h2 {
 
 .profile-section {
   margin-top: 10rem;
+  max-width: 900px;
+  margin: 0px auto;
 }
 
 
@@ -884,9 +886,12 @@ media query */
     height: 100%;
   }
 
+  .project-content{
+    padding: 20px;
+  }
+
   .project-container {
     overflow: hidden;
-    padding: 20px;
   }
 
   .second-hyperlink{
