@@ -564,6 +564,7 @@ a {
 
 
 /* footer css */
+
 footer{
   border-top: 1px solid white;
   border-image-source: radial-gradient(circle farthest-corner at center center, #FFFFFF 0%, #111111 100%);
