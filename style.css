@@ -186,7 +186,6 @@ h2 {
 .main-container {
   padding-top: 11em;
   position: relative;
-
 }
 
 .hello-text {
@@ -666,6 +665,25 @@ footer span {
 
 /* back up css */
 
+/* side nav css */
+.side-nav{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: fixed;
+  bottom: 0px;
+  left: calc(4vh - 20px);
+}
+
+.side-nav:after{
+  content: '';
+  height: 80px;
+  width: 1px;
+  background-color: white;
+  margin: 20px auto 0px auto
+}
+/* side nav css */
+
 /* 
 media query */
 @media screen and (max-width: 786px) {
@@ -764,6 +782,9 @@ media query */
 
 
 @media screen and (max-width: 991px) {
+  .side-nav{
+    display: none;
+  }
   .hero{
     min-height: 80vh;
   }
