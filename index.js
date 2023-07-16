@@ -127,12 +127,13 @@ gsap.from('.image-container', {
   scrollTrigger: '.image-container',
 })
 
-gsap.from('.write-ups', {
+gsap.from('.about-me-writeup', {
   delay: 0.2,
   opacity: .01,
   duration: .6,
   y: '10%',
-  scrollTrigger: '.write-ups',
+  stagger: .25,
+  scrollTrigger: '.about-me-writeup',
 
 })
 
