@@ -166,6 +166,16 @@ gsap.from('.contacts', {
 })
 
 
+gsap.from('.side-nav', {
+  delay: 1.8,
+  x: -20,
+  duration: .4,
+  opacity: 0.01,
+  scrollTrigger: '.side-nav'
+})
+
+
+
 
 
 //  GSAP animation

@@ -484,14 +484,14 @@ a {
   font-weight: 500;
 }
 
-.fab {
+.fab, .fas {
   color: white;
   font-size: 25px;
   padding: 10px;
   transition: all 500ms ease-in-out;
 }
 
-.fab:hover {
+.fab:hover, .fas:hover {
   color: var(--blue);
 }
 
