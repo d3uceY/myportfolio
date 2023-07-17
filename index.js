@@ -12,34 +12,34 @@ let charIndex = 0;
 
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
-  } 
+  }
   else {
     cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
+    setTimeout(erase, newTextDelay);
   }
 }
 
 function erase() {
-	if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, erasingDelay);
-  } 
+  }
   else {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
     setTimeout(type, typingDelay + 1100);
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 // typing effect
@@ -54,12 +54,12 @@ submitButton.addEventListener('click', () => {
   if (secretCodeInput.value === secretCode) {
     alert('Wow, congratulatons. You have Redeemed your reward. Send Proof to Deuce');
   }
-  else if (secretCodeInput.value === ''){
+  else if (secretCodeInput.value === '') {
     alert('type something inside, abeg')
   }
 
   else
-  alert('You got it wrong. Try Again')
+    alert('You got it wrong. Try Again')
 
 });
 //easter egg
@@ -70,34 +70,34 @@ submitButton.addEventListener('click', () => {
 //  window.addEventListener('load', function(){
 //    loader.style.display = 'none';
 //  })
- //pre-loader
+//pre-loader
 
 //  GSAP animation
 gsap.from('#project-container-1', {
-  opacity:0.01,
+  opacity: 0.01,
   duration: .6,
   x: '20%',
   scrollTrigger: '#project-container-1'
 })
 
 gsap.from('#project-container-2', {
-  opacity:0.01,
+  opacity: 0.01,
   duration: .6,
   x: '-20%',
   scrollTrigger: '#project-container-2'
 })
 
 gsap.from('#project-container-3', {
-  opacity:0.01,
+  opacity: 0.01,
   duration: .6,
   x: '20%',
   scrollTrigger: '#project-container-3'
 })
 gsap.from('.nav-link', {
-  opacity:0.01,
+  opacity: 0.01,
   duration: .6,
   stagger: .2,
-  y:'-80%',
+  y: '-80%',
   scrollTrigger: '.nav-link'
 })
 
