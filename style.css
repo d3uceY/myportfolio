@@ -460,6 +460,7 @@ textarea::placeholder {
   transition: all 500ms ease-in-out;
   background-color: transparent;
   color: white;
+  font-family: var(--mono)
 }
 
 .button:hover {
