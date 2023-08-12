@@ -73,6 +73,8 @@ submitButton.addEventListener('click', () => {
 //pre-loader
 
 //  GSAP animation
+gsap.registerPlugin(ScrollTrigger)
+
 gsap.from('#project-container-1', {
   opacity: 0.01,
   duration: .6,
@@ -179,5 +181,4 @@ gsap.from('.side-nav', {
 
 
 //  GSAP animation
-
 
