@@ -948,6 +948,7 @@ media query */
   color: var(--blue);
   text-decoration: none;
   display: none;
+  width: fit-content;
 }
 
 
