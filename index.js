@@ -96,8 +96,6 @@ gsap.from('#project-container-4', {
   scrollTrigger: '#project-container-4'
 })
 
-
-
 gsap.from('#project-container-1', {
   opacity: 0.01,
   duration: .6,
@@ -120,13 +118,11 @@ gsap.from('#project-container-3', {
 })
 
 
-
 gsap.from('.nav-link', {
   opacity: 0.01,
   duration: .6,
   stagger: .2,
   y: '-80%',
-  scrollTrigger: '.nav-link'
 })
 
 
