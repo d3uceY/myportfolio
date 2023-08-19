@@ -228,14 +228,25 @@ h2 {
   transition: all 250ms ease-out;
   font-size: 20px;
   border: 1px solid white;
+  overflow: hidden;
+  position: relative;
 }
 
 .resume-button:hover,
 .resume-button:focus-visible {
   border: 1px solid var(--blue);
-  color: var(--blue);
+  padding-right: 40px;
+} 
+
+.resume-button:hover > i{
+  right: 15px;
 }
 
+.resume-button i{
+  position: absolute;
+  right: -100%;
+  transition: all 250ms ease-in-out;
+}
 /* typing effect css */
 
 .typing-effect p {
