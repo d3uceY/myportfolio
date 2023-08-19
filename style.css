@@ -137,7 +137,7 @@ h2 {
   position: relative;
   font-weight: 300;
   color: white;
-  transition: all 1s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 
@@ -739,7 +739,7 @@ media query */
     position: relative;
     font-weight: 800;
     color: #E9F8F9;
-    transition: all 1s ease-in-out;
+    transition: color 1s ease-in-out;
     font-family: var(--mono)
   }
 

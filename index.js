@@ -118,11 +118,11 @@ gsap.from('#project-container-3', {
 })
 
 
-gsap.from('.nav-link', {
-  opacity: 0.01,
+gsap.from('.nav-link, #navbar-logo', {
+  opacity: 0,
   duration: .6,
   stagger: .2,
-  y: '-80%',
+  y: '-20px',
 })
 
 
