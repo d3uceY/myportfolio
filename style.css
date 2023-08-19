@@ -135,7 +135,7 @@ h2 {
 #navbar-logo {
   font-size: 40px;
   position: relative;
-  font-weight: 300 !important;
+  font-weight: 300;
   color: white;
   transition: all 1s ease-in-out;
 }

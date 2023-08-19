@@ -29,7 +29,7 @@ function erase() {
     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, erasingDelay);
-  }
+  } 
   else {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
