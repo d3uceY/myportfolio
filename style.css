@@ -142,7 +142,6 @@ h2 {
 
 
 #navbar-logo:hover {
-  font-weight: 800;
   background-image: url('/assets/mask-image.gif');
   background-size: cover;
   background-clip: text;

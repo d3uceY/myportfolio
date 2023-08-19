@@ -52,6 +52,7 @@ const secretCodeInput = document.querySelector('#secret-code-input');
 const submitButton = document.querySelector('#submit-button');
 
 submitButton.addEventListener('click', () => {
+
   let easyAnswerMatch = false;
   let secretCodeMatched = false;
 
