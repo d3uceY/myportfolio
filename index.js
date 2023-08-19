@@ -46,31 +46,44 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 
 
 //easter egg
-const secretCode = 'dEuc3';
+const easyAnswers = ['deuce', 'Deuce', 'jesse', 'Jesse', '</d>']
+const secretCode = ['rick roll', 'Rick Roll', 'RickRoll', 'rickroll'];
 const secretCodeInput = document.querySelector('#secret-code-input');
 const submitButton = document.querySelector('#submit-button');
 
 submitButton.addEventListener('click', () => {
-  if (secretCodeInput.value === secretCode) {
+  let easyAnswerMatch = false;
+  let secretCodeMatched = false;
+
+  for (const easyCode of easyAnswers){
+    if (easyCode === secretCodeInput.value){
+      easyAnswerMatch = true
+      break;
+    }
+  }
+
+  for (const code of secretCode){
+     if (code === secretCodeInput.value){
+      secretCodeMatched = true;
+      break;
+     }
+  }
+
+  if (secretCodeMatched) {
     alert('Wow, congratulatons. You have Redeemed your reward. Send Proof to Deuce');
   }
   else if (secretCodeInput.value === '') {
     alert('type something inside, abeg')
   }
-
+  else if (easyAnswerMatch) {
+    alert('you thought it was gon be that easy?😭')
+  }
   else
     alert('You got it wrong. Try Again')
 
 });
 //easter egg
 
-//pre-loader
-// var loader = document.getElementById('preloader');
-
-//  window.addEventListener('load', function(){
-//    loader.style.display = 'none';
-//  })
-//pre-loader
 
 //  GSAP animation
 gsap.registerPlugin(ScrollTrigger)
@@ -104,6 +117,9 @@ gsap.from('#project-container-3', {
   x: '20%',
   scrollTrigger: '#project-container-3'
 })
+
+
+
 gsap.from('.nav-link', {
   opacity: 0.01,
   duration: .6,
@@ -130,13 +146,6 @@ gsap.from('.lottie-hero-svg', {
   ease: "power2.out"
 })
 
-gsap.from('.image-container', {
-  delay: 0.2,
-  opacity: 0.01,
-  duration: .6,
-  x: '-20%',
-  scrollTrigger: '.image-container',
-})
 
 gsap.from('.about-me-writeup', {
   delay: 0.2,
@@ -161,14 +170,6 @@ gsap.from('.contact-icon', {
   scrollTrigger: '.contact-icon'
 })
 
-gsap.from('.footer-list', {
-  duration: .6,
-  opacity: 0.01,
-  stagger: .5,
-  y: 20,
-  scrollTrigger: '.footer-list'
-})
-
 
 gsap.from('.contacts', {
   duration: 2,
@@ -184,10 +185,5 @@ gsap.from('.side-nav', {
   opacity: 0.01,
   scrollTrigger: '.side-nav'
 })
-
-
-
-
-
 //  GSAP animation
 
