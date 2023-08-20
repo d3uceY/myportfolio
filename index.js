@@ -118,12 +118,13 @@ gsap.from('#project-container-3', {
 })
 
 
-gsap.from('.nav-link, #navbar-logo', {
+gsap.from('.nav-link', {
   opacity: 0,
   duration: .6,
   stagger: .2,
   y: '-20px',
 })
+
 
 
 gsap.from('.hero-animate', {
