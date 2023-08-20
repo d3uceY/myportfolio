@@ -135,7 +135,7 @@ h2 {
 #navbar-logo {
   font-size: 40px;
   position: relative;
-  font-weight: 300;
+  font-weight: 500;
   color: white;
   transition: color 1s ease-in-out;
   position: relative;
@@ -182,6 +182,17 @@ h2 {
   background: black;
   left: 0px;
   top: 0px;
+  z-index: 2;
+}
+
+#logo-overlay-white{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 
@@ -748,7 +759,6 @@ media query */
   #navbar-logo {
     font-size: var(--navbar-font-size-small-screen);
     position: relative;
-    font-weight: 800;
     transition: color 1s ease-in-out;
     font-family: var(--mono)
   }

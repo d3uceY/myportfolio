@@ -127,9 +127,18 @@ gsap.from('.nav-link', {
 
 gsap.to('#logo-overlay', {
   width: 0,
-  duration: 1,
-  delay: 2.5
+  duration: .3,
+  delay: 2.5,
+  ease: "expo.out"
 })
+
+gsap.to('#logo-overlay-white', {
+  width: 0,
+  duration: .4,
+  delay: 3.2,
+  ease: "power3.out"
+})
+
 
 gsap.from('.hero-animate', {
   opacity: 0,
