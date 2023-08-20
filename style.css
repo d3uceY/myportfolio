@@ -180,7 +180,7 @@ h2 {
   height: 100%;
   width: 100%;
   background: black;
-  right: 0px;
+  left: 0px;
   top: 0px;
   z-index: 2;
 }
@@ -190,7 +190,7 @@ h2 {
   height: 100%;
   width: 100%;
   background: white;
-  right: 0px;
+  left: 0px;
   top: 0px;
   z-index: 1;
 }
