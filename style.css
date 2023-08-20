@@ -749,7 +749,6 @@ media query */
     font-size: var(--navbar-font-size-small-screen);
     position: relative;
     font-weight: 800;
-    color: #E9F8F9;
     transition: color 1s ease-in-out;
     font-family: var(--mono)
   }
