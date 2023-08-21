@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 
 
 //easter egg
-const easyAnswers = ['deuce', 'Deuce', 'jesse', 'Jesse', '</d>']
+const easyAnswers = ['deuce', 'Deuce', 'jesse', 'Jesse', '</d>', '</D>']
 const secretCode = ['rick roll', 'Rick Roll', 'RickRoll', 'rickroll'];
 const secretCodeInput = document.querySelector('#secret-code-input');
 const submitButton = document.querySelector('#submit-button');
@@ -149,8 +149,8 @@ gsap.from('.hero-animate', {
   ease: "power2.out"
 })
 
-gsap.from('.lottie-hero-svg', {
-  opacity: 0.01,
+gsap.from('.hero-svg', {
+  opacity: 0,
   duration: .5,
   delay: 1.6,
   x: '20%',

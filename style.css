@@ -200,12 +200,16 @@ h2 {
 
 
 /* hero section */
+.hero-svg{
+  width: 50%;
+}
+
 .hero {
   min-height: 100vh;
 }
 
 .main-container {
-  padding-top: 11em;
+
   position: relative;
 }
 
