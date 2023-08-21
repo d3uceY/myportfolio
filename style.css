@@ -210,22 +210,16 @@ h2 {
 }
 
 .hello-text {
-  color: #ffffff;
-  font-weight: 300;
+  color: var(--blue);
+  font-weight: 600;
   font-family: 'IBM Plex Mono', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .deuce-text {
   font-size: 8rem;
   font-weight: 800;
   color: white;
-}
-
-.iam-text {
-  color: white;
-  font-size: 106px;
-  font-weight: 700;
 }
 
 .first-section {
@@ -775,9 +769,6 @@ media query */
     font-size: 5rem;
   }
 
-  .iam-text {
-    font-size: 60px;
-  }
 
   .contact-form-header {
     text-align: center;
