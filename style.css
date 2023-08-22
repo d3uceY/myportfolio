@@ -185,15 +185,6 @@ h2 {
   z-index: 2;
 }
 
-#logo-overlay-white{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-}
 
 
 /* .navbar */
@@ -205,7 +196,7 @@ h2 {
 }
 
 .hero {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .main-container {
@@ -221,10 +212,13 @@ h2 {
 }
 
 .deuce-text {
-  font-size: 8rem;
+  font-size:2.2rem;
   font-weight: 800;
   color: white;
+  line-height: 1.5;
+  text-wrap: balance;
 }
+
 
 .first-section {
   line-height: 1;
@@ -267,58 +261,6 @@ h2 {
   right: -100%;
   transition: all 250ms ease-in-out;
 }
-/* typing effect css */
-
-.typing-effect p {
-  font-size: 25px;
-  padding: 0.5rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  overflow: hidden;
-  color: #E9F8F9;
-}
-
-.typing-effect p span.typed-text {
-  font-weight: normal;
-  color: var(--blue);
-}
-
-.typing-effect p span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-
-.typing-effect p span.cursor.typing {
-  animation: none;
-}
-
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-
-  49% {
-    background-color: #ccc;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-
-  99% {
-    background-color: transparent;
-  }
-
-  100% {
-    background-color: #ccc;
-  }
-}
-
-/*typing effect css */
-
 
 /*about me section css */
 
@@ -744,7 +686,6 @@ media query */
   }
 
   .main-container {
-    padding-top: 2rem;
     overflow: hidden;
   }
 
@@ -761,16 +702,13 @@ media query */
     font-family: var(--mono)
   }
 
-  .navbar {
-    margin-bottom: var(--margin-bottom-nav-small-screen);
-  }
 
   .typing-effect p {
     font-size: 15px;
   }
 
   .deuce-text {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 
 
@@ -815,7 +753,7 @@ media query */
     display: none;
   }
   .hero{
-    min-height: 80vh;
+     height: 100vh;
   }
  
   #NavBar {
