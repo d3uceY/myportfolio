@@ -87,6 +87,13 @@ gsap.to('#logo-overlay', {
   ease: "expo.out"
 })
 
+gsap.to('#logo-overlay-white', {
+  width: 0,
+  duration: .4,
+  delay: 3.2,
+  ease: "power3.out"
+})
+
 
 gsap.from('.hero-animate', {
   opacity: 0,

@@ -173,6 +173,28 @@ h2 {
   padding: 0px !important;
 }
 
+
+#contact-nav-button{
+  border: 1px solid var(--blue);
+  padding: 8px 8px;
+  margin-right: 0px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#contact-nav-button a{
+  color: var(--blue);
+  font-family: var(--mono);
+}
+
+#contact-nav-button:hover > a{
+  color: white;
+}
+
+#contact-nav-button:after{
+  display: none;
+}
+
 /* overlay-animation */
 
 #logo-overlay{
@@ -200,7 +222,7 @@ h2 {
 }
 
 .main-container {
-
+  overflow: hidden;
   position: relative;
 }
 
@@ -752,9 +774,6 @@ media query */
   .side-nav{
     display: none;
   }
-  .hero{
-     height: 100vh;
-  }
  
   #NavBar {
     border-bottom: 1px solid white;
@@ -765,17 +784,6 @@ media query */
   .nav-item:not(:last-child) {
     margin-right: 0px !important;
     margin-bottom: 15px;
-  }
-
-
-  .navbar-nav {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-link:hover {
-    opacity: 0.6;
   }
 
   .about-me-writeup {
