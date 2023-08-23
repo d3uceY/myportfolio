@@ -23,16 +23,6 @@
   --blue-transparent: #16a9c780;
 }
 
-/* loader */
-/* #preloader{
-  background: var(--black) url(/assets/pacman.svg) no-repeat center;
-  background-size: 30%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-loader */
 
 html{
   scroll-behavior: smooth;
@@ -196,6 +186,7 @@ h2 {
 .hero {
   height: 100vh;
 }
+
 
 .main-container {
   overflow: hidden;
@@ -742,12 +733,23 @@ media query */
 
 
 @media screen and (max-width: 991px) {
+  .hero{
+    height: 100vh;
+   }
+ 
+   .first-section{
+     height: 70vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+   }
   .navigation-content{
       position: fixed;
       background: #000;
       z-index: 2;
       width: 100vw;
-      max-width: 300px;
+      max-width: 500px;
       height: 100vh;
       top: 0px;
       right: -100vh;
@@ -922,6 +924,7 @@ media query */
 
 
 @media screen and (max-width: 546px) {
+
   .project {
     color: white;
     font-family: 'Poppins';
