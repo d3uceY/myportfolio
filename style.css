@@ -744,6 +744,7 @@ media query */
      justify-content: center;
      align-items: flex-start;
    }
+   
   .navigation-content{
       position: fixed;
       background: #000;
@@ -757,7 +758,8 @@ media query */
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
+      gap: 20px;
+      font-size: 20px;
       padding: 0px;
       transition: 240ms ease-in-out;
   }
