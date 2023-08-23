@@ -1,6 +1,7 @@
 // navigationbar
 navLinks = document.querySelector('.navigation-content');
 menuToggler = document.querySelector('.toggle');
+menuTogglerParent = document.querySelector('#menubtn')
   
 menuToggler.addEventListener('click', () => {
   if(navLinks.classList.contains('clicked')){
@@ -8,6 +9,18 @@ menuToggler.addEventListener('click', () => {
   } else {
     navLinks.classList.add('clicked')
   }
+})
+
+menuTogglerParent.addEventListener('click', () => {
+  menuTogglerParent.classList.add('active');
+  if(!navLinks.classList.contains('clicked')){
+    menuToggler.classList.remove('active')
+  }
+})
+
+window.addEventListener('scroll', () =>{
+  navLinks.classList.remove('clicked');
+  menuTogglerParent.classList.remove('active')
 })
 // navigationbar
 

@@ -107,21 +107,21 @@ h2 {
   transition-delay: 0s;
 }
 
-#checkbox:checked+.toggle .bar--top {
+#menubtn.active #checkbox:checked+.toggle .bar--top {
   bottom: calc(50% - 11px - 4px);
   margin-bottom: calc(11px + 4px/ 2);
   transform: rotate(45deg);
   transition-delay: calc(0s + 0.21s * .3), calc(0s + 0.21s * 1.3), calc(0s + 0.21s * 1.3);
 }
 
-#checkbox:checked+.toggle .bar--middle {
+#menubtn.active #checkbox:checked+.toggle .bar--middle {
   top: calc(50% + 11px);
   opacity: 0;
   transition-duration: 0.21s, 0s;
   transition-delay: 0s, calc(0s + 0.21s);
 }
 
-#checkbox:checked+.toggle .bar--bottom {
+#menubtn.active #checkbox:checked+.toggle .bar--bottom {
   top: calc(50% - 4px/ 2);
   transform: rotate(-45deg);
   transition-delay: calc(0s + 0.21s * 1.3), calc(0s + 0.21s * 1.3);
@@ -698,11 +698,6 @@ media query */
     position: relative;
     transition: color 1s ease-in-out;
     font-family: var(--mono)
-  }
-
-
-  .typing-effect p {
-    font-size: 15px;
   }
 
   .deuce-text {
