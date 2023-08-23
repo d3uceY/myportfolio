@@ -59,6 +59,9 @@ h2 {
 /* .navbar */
 
 /* navbar toggler */
+#menubtn{
+  z-index: 10;
+}
 #checkbox {
   display: none;
 }
@@ -128,9 +131,6 @@ h2 {
 
 
 
-.navbar {
-  background-color: var(--black);
-}
 
 #navbar-logo {
   font-size: 40px;
@@ -141,36 +141,12 @@ h2 {
   position: relative;
 }
 
-
-#navbar-logo:hover {
-  background-image: url('/assets/mask-image.gif');
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#navbar-toggler {
-  padding: 0px;
-}
-
-
-
-.navbar-nav .nav-item:not(:last-child) {
-  margin-right: 3rem;
-}
-
-.nav-item .nav-link {
+.navigation-link a{
   color: white;
 }
 
-.navbar-nav .nav-link:hover {
+.navigation-link a:hover{
   color: white;
-}
-
-.nav-link {
-  position: relative;
-  padding: 0px !important;
 }
 
 
@@ -771,6 +747,32 @@ media query */
 
 
 @media screen and (max-width: 991px) {
+  .navigation-content{
+      position: fixed;
+      background: #000;
+      z-index: 2;
+      width: 100vw;
+      max-width: 300px;
+      height: 100vh;
+      top: 0px;
+      right: -100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      padding: 0px;
+      transition: 240ms ease-in-out;
+  }
+
+  .navigation-content.clicked{
+    right: 0px;
+  }
+
+  #contact-nav-button{
+    margin-top: 30px;
+  }
+
   .side-nav{
     display: none;
   }
@@ -782,8 +784,9 @@ media query */
   }
 
   .nav-item:not(:last-child) {
-    margin-right: 0px !important;
+    margin-left: 10px;
     margin-bottom: 15px;
+    border-bottom: 1px solid white;
   }
 
   .about-me-writeup {

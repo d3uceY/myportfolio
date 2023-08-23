@@ -1,3 +1,15 @@
+// navigationbar
+navLinks = document.querySelector('.navigation-content');
+menuToggler = document.querySelector('.toggle');
+  
+menuToggler.addEventListener('click', () => {
+  if(navLinks.classList.contains('clicked')){
+    navLinks.classList.remove('clicked')
+  } else {
+    navLinks.classList.add('clicked')
+  }
+})
+// navigationbar
 
 
 //easter egg
@@ -73,7 +85,7 @@ gsap.from('#project-container-3', {
 })
 
 
-gsap.from('.nav-link', {
+gsap.from('.navigation-link', {
   opacity: 0,
   duration: .6,
   stagger: .2,
@@ -86,14 +98,6 @@ gsap.to('#logo-overlay', {
   delay: 2.5,
   ease: "expo.out"
 })
-
-gsap.to('#logo-overlay-white', {
-  width: 0,
-  duration: .4,
-  delay: 3.2,
-  ease: "power3.out"
-})
-
 
 gsap.from('.hero-animate', {
   opacity: 0,
