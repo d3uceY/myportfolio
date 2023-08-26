@@ -224,8 +224,9 @@ h2 {
   color: var(--black);
   border: none;
   outline: none;
-  font-family: var(--mono);
-  font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
   margin-top: 3rem;
   transition: all 250ms ease-out;
   font-size: 20px;
@@ -735,7 +736,7 @@ media query */
    }
  
    .first-section{
-     height: 70vh;
+     height: 80vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
