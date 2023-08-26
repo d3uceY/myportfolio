@@ -407,9 +407,7 @@ textarea::placeholder {
 }
 
 .button {
-  outline: none;
   border: none;
-  border: 1px solid white;
   padding: 10px;
   font-size: 19px;
   font-weight: 500;
@@ -417,14 +415,11 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   transition: all 500ms ease-in-out;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: var(--mono)
 }
 
-.button:hover {
-  opacity: 0.6;
-}
 
 form {
   padding: 20px;
