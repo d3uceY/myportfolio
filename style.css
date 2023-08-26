@@ -220,23 +220,21 @@ h2 {
 
 .resume-button {
   padding: 15px;
-  background-color: transparent;
-  color: white;
-  outline: none;
+  background-color: var(--blue);
+  color: var(--black);
   border: none;
+  outline: none;
   font-family: var(--mono);
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 3rem;
   transition: all 250ms ease-out;
   font-size: 20px;
-  border: 1px solid white;
   overflow: hidden;
   position: relative;
 }
 
 .resume-button:hover,
 .resume-button:focus-visible {
-  border: 1px solid var(--blue);
   padding-right: 40px;
 } 
 
