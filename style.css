@@ -811,6 +811,11 @@ media query */
   margin: 0px auto;
 }
 
+
+
+
+
+
 .project-container:not(:last-child){
   margin-bottom: 50px;
 }
@@ -858,7 +863,7 @@ media query */
 }
 
 .project-image-container:before {
-  --blue-transparent: rgba(22, 168, 197, 0.7);
+  /* --blue-transparent: rgba(0, 0, 0, 0.7); */
   content: '';
   position: absolute;
   background-color: var(--blue-transparent);
@@ -884,6 +889,31 @@ media query */
   color: grey;
   padding-left: 0px;
 }
+
+/* alternate flex project direction */
+
+@media screen and (min-width: 547px ){
+  .alternate-flex-project{
+    flex-direction: row-reverse;
+  }
+  
+  .alternate-flex-project .project{
+    left: -30px;
+    text-align: end;
+  }
+  
+  .alternate-flex-project .project-title{
+    margin-left: auto;
+  }
+  
+  .alternate-flex-project .tool-list{
+    width: fit-content;
+    margin-left: auto;
+  }
+  
+}
+/* alternate flex project direction */
+/* project css ends here */
 
 .underline-hover {
   position: relative;

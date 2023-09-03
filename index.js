@@ -2,9 +2,9 @@
 navLinks = document.querySelector('.navigation-content');
 menuToggler = document.querySelector('.toggle');
 menuTogglerParent = document.querySelector('#menubtn')
-  
+
 menuToggler.addEventListener('click', () => {
-  if(navLinks.classList.contains('clicked')){
+  if (navLinks.classList.contains('clicked')) {
     navLinks.classList.remove('clicked')
   } else {
     navLinks.classList.add('clicked')
@@ -13,12 +13,12 @@ menuToggler.addEventListener('click', () => {
 
 menuTogglerParent.addEventListener('click', () => {
   menuTogglerParent.classList.add('active');
-  if(!navLinks.classList.contains('clicked')){
+  if (!navLinks.classList.contains('clicked')) {
     menuToggler.classList.remove('active')
   }
 })
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
   navLinks.classList.remove('clicked');
   menuTogglerParent.classList.remove('active')
 })
@@ -26,8 +26,8 @@ window.addEventListener('scroll', () =>{
 
 
 //easter egg
-const easyAnswers = ['deuce', 'Deuce', 'jesse', 'Jesse', '</d>', '</D>']
-const secretCode = ['rick roll', 'Rick Roll', 'RickRoll', 'rickroll'];
+const easyAnswers = ['deuce', 'jesse', '</d>']
+const secretCode = ['rick roll', 'rickroll'];
 const secretCodeInput = document.querySelector('#secret-code-input');
 const submitButton = document.querySelector('#submit-button');
 
@@ -35,32 +35,39 @@ submitButton.addEventListener('click', () => {
 
   let easyAnswerMatch = false;
   let secretCodeMatched = false;
+  let secretCodeValue = secretCodeInput.value.trim().toLowerCase();
 
-  for (const easyCode of easyAnswers){
-    if (easyCode === secretCodeInput.value){
+  if (secretCodeValue === '') {
+    alert('type something inside, abeg')
+    return;
+  }
+
+  for (const easyCode of easyAnswers) {
+    if (easyCode === secretCodeValue) {
       easyAnswerMatch = true
       break;
     }
   }
 
-  for (const code of secretCode){
-     if (code === secretCodeInput.value){
+  for (const code of secretCode) {
+    if (code === secretCodeValue) {
       secretCodeMatched = true;
       break;
-     }
+    }
+  }
+
+  
+  if (easyAnswerMatch) {
+    alert('you thought it was gon be that easy?😭')
+    return
   }
 
   if (secretCodeMatched) {
     alert('Wow, congratulatons. You have Redeemed your reward. Send Proof to Deuce');
+    return
   }
-  else if (secretCodeInput.value === '') {
-    alert('type something inside, abeg')
-  }
-  else if (easyAnswerMatch) {
-    alert('you thought it was gon be that easy?😭')
-  }
-  else
-    alert('You got it wrong. Try Again')
+
+  alert('You got it wrong. Try Again')
 
 });
 //easter egg
