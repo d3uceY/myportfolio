@@ -200,10 +200,10 @@ h2 {
 }
 
 .deuce-text {
-  font-size:2.2rem;
+  font-size:3rem;
   font-weight: 800;
   color: white;
-  line-height: 1.5;
+  line-height: 1.2;
   text-wrap: balance;
 }
 
@@ -294,7 +294,7 @@ h2 {
 .about-me-writeup {
   line-height: 2;
   max-width: 250px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ul {

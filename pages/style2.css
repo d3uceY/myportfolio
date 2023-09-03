@@ -49,6 +49,7 @@ body {
 }
 
 .paragraph {
+  --paragraph-size: 20px;
   font-size: var(--paragraph-size);
 }
 
