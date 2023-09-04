@@ -932,7 +932,7 @@ media query */
 
 .underline-hover:hover {
   color: var(--blue);
-  cursor: pointer;
+  user-select: none;
 }
 
 .underline-hover:hover:before {
