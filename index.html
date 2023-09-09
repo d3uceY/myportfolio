@@ -8,14 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <!-- gsap script-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-  <!-- gsap script tag-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- lottie-files js -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <!-- lottie-files js -->
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
 
@@ -30,10 +23,10 @@
       </div>
 
       <ul class="navigation-content d-flex align-items-lg-center">
-        <li class="me-lg-4 navigation-link list-unstyled underline-hover"><a href="#">Home</a></li>
-        <li class="me-lg-4 navigation-link list-unstyled underline-hover"><a href="#about-container">About</a></li>
-        <li class="me-lg-4 navigation-link list-unstyled underline-hover"><a href="#projects">Projects</a></li>
-        <li id="contact-nav-button" class="navigation-link list-unstyled"><a href="/assets/Resume.pdf"
+        <li class="me-lg-4 navigation-link list-unstyled underline-hover" aria-label="home"><a href="#">Home</a></li>
+        <li class="me-lg-4 navigation-link list-unstyled underline-hover" aria-label="about"><a href="#about-container">About</a></li>
+        <li class="me-lg-4 navigation-link list-unstyled underline-hover" aria-label="Projects"><a href="#projects">Projects</a></li>
+        <li id="contact-nav-button" class="navigation-link list-unstyled" aria-label="resume"><a href="/assets/Resume.pdf"
             download>Resume</a></li>
       </ul>
 
@@ -57,7 +50,7 @@
       <!-- first section -->
       <div class="d-lg-flex justify-content-lg-between hero align-items-lg-center">
         <div class="first-section">
-          <h3 class="hello-text hero-animate">Hi, i am Deuce 😎</h3>
+          <h1 class="hello-text hero-animate">Hi, i am Deuce 😎</h1>
           <p class="deuce-text hero-animate">
             I Build Beautiful Digital Experiences!
           </p>
@@ -101,16 +94,22 @@
             <div class="listed-items text-white row text-align-end">
               <p class="text-white about-me-writeup ">Here are some technologies that i have been working with:</p>
               <ul class="row">
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/javascript.svg">Javascript
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/javascript.svg"
+                    alt="javascript">Javascript
                 </li>
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/react.svg">ReactJs</li>
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/git.svg">Git</li>
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/tailwind-css.svg">Tailwind
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/react.svg"
+                    alt="react">ReactJs</li>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/git.svg" alt="git">Git</li>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/tailwind-css.svg"
+                    alt="tailwind-css">Tailwind
                 </li>
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/bootstrap.svg">Bootstrap</li>
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/vscode.svg">Visual Studio
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/bootstrap.svg"
+                    alt="bootstrap">Bootstrap</li>
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/vscode.svg"
+                    alt="vscode">Visual Studio
                 </li>
-                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/material.svg">Material UI
+                <li class="technologies col-md-auto "><img class="list-icons" src="/assets/material.svg"
+                    alt="Material Ui">Material UI
                 </li>
               </ul>
             </div>
@@ -148,7 +147,7 @@
         </div>
         <a href="/pages/LenoX.html">
           <div class="project-image-container">
-            <img src="/assets/lenox-project-showcase.png" alt="" class="project-image">
+            <img src="/assets/lenox-project-showcase.png" alt="lenox-project-image" class="project-image">
           </div>
         </a>
       </div>
@@ -179,7 +178,7 @@
         </div>
         <a href="/pages/citrone.html">
           <div class="project-image-container">
-            <img src="/assets/citrone-project-showcase.png" alt="" class="project-image">
+            <img src="/assets/citrone-project-showcase.png" alt="citron-project-image" class="project-image">
           </div>
         </a>
       </div>
@@ -210,7 +209,7 @@
         </div>
         <a href="/pages/lalasia.html" class="image-link">
           <div class="project-image-container">
-            <img src="/assets/lalasia-project-showcase.png" alt="" class="project-image">
+            <img src="/assets/lalasia-project-showcase.png" alt="lalasia project image" class="project-image">
           </div>
         </a>
       </div>
@@ -225,7 +224,7 @@
         <h2 class="text-white"><span>.</span> Say Hello!</h2>
       </div>
       <div class="contact-container-content">
-        <h1 class="contact-form-header h5 text-white container">Contact Me Using Form:</h1>
+        <h2 class="contact-form-header h5 text-white container">Contact Me Using Form:</h2>
         <div class="d-xl-flex justify-content-between">
           <!-- text boxes -->
           <form class="form-container" action="https://formsubmit.co/onyekwelujesse1234@gmail.com" method="POST">
@@ -288,6 +287,13 @@
   </div>
   <!-- main container ends here -->
   <footer class="container  footer-2"> <span>Designed & Built By Onyekwelu Jesse</span> </footer>
+  <!-- lottie-files js -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- lottie-files js -->
+  <!-- gsap script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+  <!-- gsap script tag-->
   <script src="/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
