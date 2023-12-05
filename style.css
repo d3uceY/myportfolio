@@ -825,7 +825,7 @@ media query */
   height: 100%;
 }
 
-.project-content a{
+.project-content a:has(img){
   display: block;
 }
 
