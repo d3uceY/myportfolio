@@ -36,6 +36,10 @@ html{
   font-family: 'Poppins', sans-serif;
 }
 
+a{
+  display: block;
+}
+
 body {
   background-color: var(--black) !important;
 }
@@ -860,6 +864,8 @@ media query */
 .project-image {
   width: 100%;
   display: block;
+  object-fit: cover;
+  height: 100%;
 }
 
 .project-image-container:before {
@@ -873,6 +879,11 @@ media query */
   top: 0px;
   opacity: 1;
   transition: 250ms ease-in-out;
+}
+
+.project-container a{
+  width: 50%;
+  height: 100%;
 }
 
 .project-container a:hover>.project-image-container:before {

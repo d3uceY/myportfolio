@@ -76,6 +76,14 @@ submitButton.addEventListener('click', () => {
 //  GSAP animation
 gsap.registerPlugin(ScrollTrigger)
 
+gsap.from('#project-container-5', {
+  opacity: 0.01,
+  duration: .6,
+  x: '20%',
+  scrollTrigger: '#project-container-5'
+})
+
+
 gsap.from('#project-container-4', {
   opacity: 0.01,
   duration: .6,
