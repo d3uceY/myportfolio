@@ -36,9 +36,6 @@ html{
   font-family: 'Poppins', sans-serif;
 }
 
-a{
-  display: block;
-}
 
 body {
   background-color: var(--black) !important;
@@ -826,6 +823,10 @@ media query */
 
 .project-content {
   height: 100%;
+}
+
+.project-content a{
+  display: block;
 }
 
 .project {
